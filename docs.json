@@ -95,8 +95,8 @@
     }
   },
   "logo": {
-    "light": "cropped-paymee-logo-transparent-blue.png",
-    "dark": "cropped-paymee-logo-transparent-white.png"
+    "light": "https://paymee-public-cnd.s3.us-west-2.amazonaws.com/cropped-paymee-logo-transparent-blue.png",
+    "dark": "https://paymee-public-cnd.s3.us-west-2.amazonaws.com/cropped-paymee-logo-transparent-white.png"
   },
   "navbar": {
     "links": [
