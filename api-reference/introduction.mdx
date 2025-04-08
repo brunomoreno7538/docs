@@ -1,33 +1,38 @@
 ---
-title: 'Introduction'
-description: 'Example section for showcasing API endpoints'
+title: 'Overview'
+description: 'Introduction to integrating with the PayMee API, covering purpose, requirements, and environments.'
 ---
 
-<Note>
-  If you're not looking to build API reference documentation, you can delete
-  this section by removing the api-reference folder.
-</Note>
+## Purpose
 
-## Welcome
+The purpose of this documentation is to guide the developer on how to integrate with PayMee. It describes the features and methods to be used, lists the information to be sent and received, and provides examples.
 
-There are two ways to build API documentation: [OpenAPI](https://mintlify.com/docs/api-playground/openapi/setup) and [MDX components](https://mintlify.com/docs/api-playground/mdx/configuration). For the starter kit, we are using the following OpenAPI specification.
+## Required Knowledge
 
-<Card
-  title="Plant Store Endpoints"
-  icon="leaf"
-  href="https://github.com/mintlify/starter/blob/main/api-reference/openapi.json"
->
-  View the OpenAPI specification file
-</Card>
+The integration mechanism with PayMee is straightforward. Intermediate knowledge in the following areas is required to successfully deploy the PayMee solution:
 
-## Authentication
+* Web programming languages
+* `HTTP`/`HTTPS` requests
+* `JSON` file manipulation
 
-All API endpoints are authenticated using Bearer tokens and picked up from the specification file.
+## API Operations
 
-```json
-"security": [
-  {
-    "bearerAuth": []
-  }
-]
-```
+In this manual, you will find references to all operations available via the PayMee `API REST`. These operations require authentication using specific keys (`x-api-key` and `x-api-token`) sent in the request headers.
+
+### Environments
+
+Requests should be directed to the appropriate environment endpoint:
+
+* **Production Environment:** For live transactions.
+    [https://api.paymee.com.br/](https://api.paymee.com.br/)
+
+* **Sandbox Environment:** For testing and development.
+    [https://apisandbox.paymee.com.br/](https://apisandbox.paymee.com.br/)
+
+### Making Requests
+
+To perform an operation:
+
+1.  Combine the base URL of the chosen environment (Production or Sandbox) with the resource (`URI`) of the desired operation.
+2.  Send the request using the `HTTP` verb specified for that operation (e.g., `GET`, `POST`).
+3.  Include your `x-api-key` and `x-api-token` in the request headers for authentication.

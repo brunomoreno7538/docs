@@ -1,0 +1,120 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "maple",
+  "name": "API PayMee 1.1",
+  "colors": {
+    "primary": "#E85A27",
+    "light": "#E85A27",
+    "dark": "#E85A27"
+  },
+  "favicon": "cropped-fav-180x180.png",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "API Documentation",
+            "pages": [
+              "api-reference/introduction",
+              "api-reference/solution-features",
+              "api-reference/architecture",
+              "api-reference/sandbox-tools",
+              "api-reference/webhook"
+            ]
+          },
+          {
+            "group": "Checkout",
+            "pages": [
+              "api-reference/checkouts/semi-transparent-wire-transfer-pix-and-credit-card-and-openbanking-checkout",
+              "api-reference/checkouts/redirect-checkout"
+            ]
+          },
+          {
+            "group": "Payouts",
+            "pages": [
+              "api-reference/payouts/individual-payout-request",
+              "api-reference/payouts/batch-payout-request",
+              "api-reference/payouts/authorize-payout",
+              "api-reference/payouts/cancel-a-payout"
+            ]
+          },
+          {
+            "group": "Loan",
+            "pages": [
+              "api-reference/checkouts/simulation",
+              "api-reference/checkouts/create"
+            ]
+          },
+          {
+            "group": "Transactions",
+            "pages": [
+              "api-reference/query-a-transaction",
+              "api-reference/query-transactions-using-filters",
+              "api-reference/get-pix-data-from-a-sale",
+              "api-reference/cancel-a-transaction"
+            ]
+          },
+          {
+            "group": "Payment Methods",
+            "pages": [
+              "api-reference/get-available-payment-methods"
+            ]
+          },
+          {
+            "group": "Financial",
+            "pages": [
+              "api-reference/query-current-balance",
+              "api-reference/request-a-sale-refund"
+            ]
+          },
+          {
+            "group": "Webhooks and Callbacks",
+            "pages": [
+              "api-reference/query-a-webhook-requests",
+              "api-reference/request-a-webhook-redeliver"
+            ]
+          },
+          {
+            "group": "Payer Information",
+            "pages": [
+              "api-reference/get-payer-information"
+            ]
+          }
+        ]
+      }
+    ],
+    "global": {
+      "anchors": [
+        {
+          "anchor": "Help",
+          "href": "https://paymee.com.br/ajuda/",
+          "icon": "book-open-cover"
+        }
+      ]
+    }
+  },
+  "logo": {
+    "light": "cropped-paymee-logo-transparent-blue.png",
+    "dark": "cropped-paymee-logo-transparent-white.png"
+  },
+  "navbar": {
+    "links": [
+      {
+        "label": "Support",
+        "href": "mailto:suporte@paymee.com.br"
+      }
+    ],
+    "primary": {
+      "type": "button",
+      "label": "Dashboard",
+      "href": "https://secure.paymee.com.br/"
+    }
+  },
+  "footer": {
+    "socials": {
+      "github": "https://github.com/paymeebrasil",
+      "linkedin": "https://www.linkedin.com/company/paymeebrasil/"
+    }
+  }
+}

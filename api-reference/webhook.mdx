@@ -1,0 +1,348 @@
+---
+title: 'Webhook Notifications'
+description: 'Receiving real-time event notifications from PayMee via webhooks, including authentication, examples, and response formats.'
+---
+
+Webhooks allow your application to receive real-time notifications about events related to your PayMee transactions, such as payment confirmations, reversals, or refunds. These are essential for keeping your system synchronized with the status of payments without needing to poll the API constantly.
+
+## Notification Mechanism
+
+PayMee sends **Notification Posts** to a URL you configure in your PayMee merchant panel. These notifications are triggered based on specific events occurring within the PayMee system.
+
+* **Method:** `POST`
+* **Protocol:** `HTTP` / `HTTPS` (HTTPS is strongly recommended for security)
+* **Configurable Events:** You can select which events trigger a notification in your panel. Common event types that can be configured include:
+
+    | Event Context | Notifiable Statuses / Events      |
+    | :------------ | :-------------------------------- |
+    | Sale          | `PAID`, `REVERSAL`                |
+    | Transfer      | `PAID`                            |
+    | Payout        | `PAID`, `FAILED`                  |
+    | Refund        | `PAID`                            |
+    | Reversal      | `PENDING`, `PAID`, `CANCELLED`    |
+    *Note: This table provides a general overview. Consult your PayMee panel for the exact configuration options available for your account.*
+
+## Authentication
+
+Webhook notifications sent by PayMee use **HTTP Basic Authentication** for security, ensuring that the requests genuinely originate from PayMee.
+
+* **Username:** Your PayMee `x-api-key`
+* **Password:** Your PayMee `x-api-token`
+
+Your webhook listener endpoint **must** validate these credentials from the `Authorization` header of incoming requests before processing the payload.
+
+**Example Basic Auth Header Construction:**
+
+1.  **Combine Credentials:** Concatenate your API key and token, separated by a colon (`:`).
+    *Example:* `af38b751-30d7-4261-a9fb-ea30f6ece609:28331f43-e2b3-4078-9502-5f656fb66cdf`
+
+2.  **Encode with Base64:** Encode the resulting string using Base64.
+    *Example Encoded Value:* `YWYzOGI3NTEtMzBkNy00MjYxLWE5ZmItZWEzMGY2ZWNlNjA5OjI4MzMxZjQzLWUyYjMtNDA3OC05NTAyLTVmNjU2ZmI2NmNkZg==`
+
+3.  **Construct Header:** The `Authorization` header sent by PayMee will look like this:
+    ```http
+    Authorization: Basic YWYzOGI3NTEtMzBkNy00MjYxLWE5ZmItZWEzMGY2ZWNlNjA5OjI4MzMxZjQzLWUyYjMtNDA3OC05NTAyLTVmNjU2ZmI2NmNkZg==
+    ```
+## Expected Response & Retries
+
+For **all** types of webhook notifications received from PayMee:
+
+* Your callback URL **must** respond promptly with an `HTTP 200 OK` status code to acknowledge successful receipt and acceptance of the notification. Any other status code (or a timeout) will be interpreted as a failure.
+* If PayMee does not receive a `200 OK` status, it will automatically retry sending the notification to ensure delivery.
+* Retries occur at approximately **60-second intervals**.
+* PayMee will attempt a maximum of **5 retries** after the initial failure.
+* **Idempotency:** It's crucial to design your webhook handler to be idempotent. This means processing the same notification multiple times should not result in duplicate actions or inconsistent states in your system, as network issues could lead to retries even if you processed the notification initially. Using the `saleToken` or `uuid` from the payload is a common way to check if an event has already been processed.
+
+---
+
+## Payment Confirmation Notification
+
+*(Also known as Transfer/Walk-in Notification)*
+
+This notification is sent when a payment associated with a transaction is successfully confirmed (status transitions to `PAID`).
+
+**Example Notification POST:**
+
+```http
+POST /your-callback-path HTTP/1.1
+Host: your-registered-domain.com
+Authorization: Basic <Your Base64 Encoded Credentials>
+Content-Length: <Actual Content Length>
+Content-Type: application/json
+
+{
+  "saleToken": "d59b39ce-bffd-3f6d-80c4-c376a242afd1",
+  "referenceCode": "0000000000014",
+  "currency": "BRL",
+  "amount": 100.00,
+  "shopper": {
+    "id": "12911",
+    "firstName": "Teste",
+    "lastName": "Silva",
+    "email": "teste@teste.com.br",
+    "agency": "1234",
+    "account": "123456-0"
+  },
+  "date": "2017-07-28 10:48:56",
+  "newStatus": "PAID"
+}
+```
+
+**Requirements:**
+* A valid **Payment Status URL** must be configured in your PayMee merchant panel settings.
+
+**Response Payload Fields:**
+
+| Property             | Type   | Description                                      |
+| :------------------- | :----- | :----------------------------------------------- |
+| `saleToken`          | string | The unique identifier (UUID) of the transaction. |
+| `referenceCode`      | string | Your unique order identification code provided during transaction creation. |
+| `amount`             | number | The amount of the order.                         |
+| `currency`           | string | The currency code (e.g., `BRL`).                 |
+| `shopper.id`         | string | The shopper's ID in your system (if provided).   |
+| `shopper.firstName`  | string | Shopper's first name.                            |
+| `shopper.lastName`   | string | Shopper's last name.                             |
+| `shopper.email`      | string | Shopper's email address.                         |
+| `shopper.agency`     | string | Shopper's bank agency (if applicable).           |
+| `shopper.account`    | string | Shopper's bank account (if applicable).          |
+| `date`               | string | Timestamp of the payment confirmation (`yyyy-MM-dd HH:mm:ss`). |
+| `newStatus`          | string | The new status of the payment, typically `PAID`. |
+
+---
+
+## Reversal Notification
+
+This notification is sent regarding the status of a transaction reversal (returning funds to the original payer, often due to issues like non-identification or cancellation).
+
+**Example Notification POST:**
+
+```http
+POST /your-callback-path?reversing=true&type=reversing HTTP/1.1
+Host: your-registered-domain.com
+Authorization: Basic <Your Base64 Encoded Credentials>
+Content-Length: <Actual Content Length>
+Content-Type: application/json
+
+{
+   "id": 611212,
+   "uuid": "d19b39ce-bffd-3f6d-80c4-c376a242afd3",
+   "currency": "BRL",
+   "originalAmount": 100.00,
+   "reversedAmount": 100.00,
+   "status": "PENDING",
+   "bankDetails": {
+    "bank": "341 - BANCO ITAÚ-UNIBANCO S.A.",
+    "branch": "0000",
+    "account": "00000-0"
+   },
+   "sale": {
+       "id": 611210,
+       "uuid": "75e0b5e2-bc3f-4e75-9c52-24096f2e004d"
+   },
+   "creation": "2018-04-15 08:33:22",
+   "receipt": null,
+   "reason": "amount greater than total of sale"
+}
+```
+
+---
+
+**Requirements:**
+* A **Reversal Status URL** must be registered in your PayMee merchant panel.
+* The reversal notification feature must be **enabled** in your panel settings for this URL.
+
+**Trigger Moments & Status:**
+This notification can inform you about key stages of a reversal:
+1.  **Reversal Initiated/Pending:** Sent when PayMee initiates a reversal (e.g., cannot approve or identify the original sale, triggering a return). The `status` attribute will typically be `PENDING`.
+2.  **Reversal Completed/Updated:** Sent when the amount is successfully returned to the customer (`PAID`) or if the reversal process is `CANCELLED`. Always check the `status` field for the specific outcome.
+
+**Response Payload Fields:**
+
+| Property             | Type   | Description                                      |
+| :------------------- | :----- | :----------------------------------------------- |
+| `id`                 | number | The unique ID of the reversal transaction.        |
+| `uuid`               | string | The unique UUID of the reversal transaction.      |
+| `currency`           | string | The currency of the order (e.g., `BRL`).         |
+| `originalAmount`     | number | The amount of the original sale transaction.     |
+| `reversedAmount`     | number | The amount that was actually reversed.           |
+| `bankDetails.bank`   | string | Name/code of the bank receiving the reversed funds. |
+| `bankDetails.branch` | string | Bank branch receiving the reversed funds.        |
+| `bankDetails.account`| string | Bank account receiving the reversed funds.       |
+| `sale.id`            | number | The ID of the original sale transaction being reversed. |
+| `sale.uuid`          | string | The UUID of the original sale transaction being reversed. |
+| `creation`           | string | Timestamp of the reversal creation (`yyyy-MM-dd HH:mm:ss`). |
+| `receipt`            | string | Reversal receipt details or link (may be null or "under development" per original text). |
+| `status`             | string | The current status of the reversal (`PENDING`, `PAID`, `CANCELLED`). |
+| `reason`             | string | The reason provided for the reversal.            |
+
+---
+
+## Refund Notification
+
+Sent when a partial or full refund initiated by you is successfully processed (`PAID`) for a previously paid transaction.
+
+**Example Notification POST:**
+
+```http
+POST /your-callback-path?refund=true&type=refund HTTP/1.1
+Host: your-registered-domain.com
+Authorization: Basic <Your Base64 Encoded Credentials>
+Content-Length: <Actual Content Length>
+Content-Type: application/json
+
+{
+   "saleToken": "d19b39ce-bffd-3f6d-80c4-c376a242afd3",
+   "referenceCode":"0000000000014",
+   "currency": "BRL",
+   "originalAmount": 150.00,
+   "reversedAmount": 50.00,
+   "bankDetails":{
+    "bank": "341 - BANCO ITAÚ-UNIBANCO S.A.",
+    "branch":"0000",
+    "account":"00000-0"
+   },
+   "receipt": "null",
+   "status": "PAID",
+   "refund": {
+       "id": 611211,
+       "uuid": "fbebcd28-ae51-11e9-a2a3-2a2ae2dbcce4",
+       "status": "PAID",
+       "amount": 50.00,
+       "creation": "2018-04-15 08:33:22",
+       "creditDate": "2018-04-16 10:48:56"
+   },
+   "reason": "amount greater than total of sale",
+   "date":"2018-04-16 10:48:56"
+}
+```
+
+**Requirements:**
+* A **Refund Status URL** must be registered (the original text suggests this can often be the same URL used for Payment Notifications, but confirm this in your PayMee panel).
+* The refund notification feature must be **enabled** in your merchant panel settings for this URL.
+
+**Trigger Moment & Status:**
+* This notification is typically sent when the refund amount is successfully processed and credited back. The `status` field in the main object and within the `refund` object should indicate `PAID`.
+
+**Response Payload Fields:**
+
+| Property             | Type   | Description                                      |
+| :------------------- | :----- | :----------------------------------------------- |
+| `saleToken`          | string | The unique identifier (UUID) of the original transaction being refunded. |
+| `referenceCode`      | string | Your unique order identification code from the original transaction. |
+| `currency`           | string | The currency code (e.g., `BRL`).                 |
+| `originalAmount`     | number | The amount of the original transaction.          |
+| `amountRefunded`     | number | The amount that was refunded in this specific operation. *(Note: The example JSON payload used the field name `reversedAmount` for this value).* |
+| `bankDetails.bank`   | string | Bank name for the refund credit (if applicable/available). |
+| `bankDetails.branch` | string | Bank branch for the refund credit (if applicable/available).|
+| `bankDetails.account`| string | Bank account for the refund credit (if applicable/available).|
+| `receipt`            | string | Refund receipt details or link (may be null or "under development" per original text). |
+| `status`             | string | The overall status related to this refund notification, typically `PAID`. |
+| `refund.id`          | number | ID of the specific refund transaction itself. *(From Example)* |
+| `refund.uuid`        | string | UUID of the specific refund transaction itself. *(From Example)*|
+| `refund.status`      | string | Status of this specific refund transaction (e.g., `PAID`). *(From Example)* |
+| `refund.amount`      | number | Amount processed in this specific refund transaction. *(From Example)*|
+| `refund.creation`    | string | Creation timestamp of this refund transaction (`yyyy-MM-dd HH:mm:ss`). *(From Example)*|
+| `refund.creditDate`  | string | Date the refund was effectively credited (`yyyy-MM-dd HH:mm:ss`). *(From Example)*|
+| `reason`             | string | The reason provided for initiating the refund.   |
+| `date`               | string | Timestamp when this refund notification was generated (`yyyy-MM-dd HH:mm:ss`). |
+
+*(Note: Fields within the `refund` object were added based on the JSON example provided in the original text, as they offer more specific details about the refund operation itself.)*
+
+---
+
+## Payout Notification
+
+This notification informs about the status of a Payout operation (transferring funds out, often initiated by you to pay a user or supplier). It can indicate success or failure.
+
+**Example Success Notification POST:**
+
+```http
+POST /your-callback-path?payout=true&type=payout HTTP/1.1
+Host: your-registered-domain.com
+Authorization: Basic <Your Base64 Encoded Credentials>
+Content-Length: <Actual Content Length>
+Content-Type: application/json
+
+{
+   "success": true,
+   "message": "success",
+   "id": 611212,
+   "uuid": "d19b39ce-bffd-3f6d-80c4-c376a242afd3",
+   "currency": "BRL",
+   "amount": 100.00,
+   "status": "PAID",
+   "referenceCode": "XPADOA",
+   "bankDetails": {
+    "bank": "341 - BANCO ITAÚ-UNIBANCO S.A.",
+    "branch": "0000",
+    "account": "00000-0"
+   },
+   "creation": "2018-04-15 08:33:22",
+   "receipt": "https://receipts.paymee.com.br/transaction/23e49aa1f7f193395a7f30900f8aeb40a65a9d7dd85e8d05456847b800713546/d19b39ce-bffd-3f6d-80c4-c376a242afd3"
+}
+```
+
+Here is an error example of a notification sent by PayMee (the lines have been broken for ease of reading in the original source):
+
+```http
+POST /your-callback-path?payout=true HTTP/1.1
+Host: your-registered-domain.com
+Authorization: Basic YWYzOGI3NTEtMzBkNy00MjYxLWE5ZmItZWEzMGY2ZWNlNjA5OjI4MzMxZjQzLWUyYjMtNDA3OC05NTAyLTVmNjU2ZmI2NmNkZg==
+Content-Type: application/json
+Content-Length: <Actual Content Length>
+
+{
+   "success": false,
+   "message": "Os dados informados não são validos",
+   "error_code": "PE0001",
+   "id": 611212,
+   "uuid": "d19b39ce-bffd-3f6d-80c4-c376a242afd3",
+   "currency": "BRL",
+   "amount": 100.00,
+   "status": "PENDING",
+   "referenceCode": "XPADOA",
+   "bankDetails": {
+    "bank": "341 - BANCO ITAÚ-UNIBANCO S.A.",
+    "branch": "0000",
+    "account": "00000-0"
+   },
+   "creation": "2018-04-15 08:33:22",
+   "receipt": "[https://receipts.paymee.com.br/transaction/23e49aa1f7f193395a7f30900f8aeb40a65a9d7dd85e8d05456847b800713546/d19b39ce-bffd-3f6d-80c4-c376a242afd3](https://receipts.paymee.com.br/transaction/23e49aa1f7f193395a7f30900f8aeb40a65a9d7dd85e8d05456847b800713546/d19b39ce-bffd-3f6d-80c4-c376a242afd3)"
+}
+```
+
+**Requirements:**
+* A **webhook URL** must be registered in your PayMee merchant panel (confirm if this is the same URL used for other notifications or a specific one for payouts).
+* The payout notification feature must be **enabled** in your panel settings for this URL.
+
+**Response Payload Fields:**
+
+*This table is constructed based on the fields shown in the success and error JSON examples provided earlier.*
+
+| Property             | Type    | Description                                      |
+| :------------------- | :------ | :----------------------------------------------- |
+| `success`            | boolean | Indicates if the overall payout operation was successful (`true`) or encountered an error (`false`). |
+| `message`            | string  | A descriptive message related to the status (e.g., "success", or an error description like "Os dados informados não são validos"). |
+| `error_code`         | string  | An error code present if `success` is `false`. See Error Codes section below. |
+| `id`                 | number  | The unique ID assigned by PayMee to this payout transaction. |
+| `uuid`               | string  | The unique UUID assigned by PayMee to this payout transaction. |
+| `currency`           | string  | The currency of the payout (e.g., `BRL`).        |
+| `amount`             | number  | The amount of the payout transaction.            |
+| `status`             | string  | The processing status of the payout (e.g., `PAID` on success, `PENDING` or other on error/processing). |
+| `referenceCode`      | string  | Your reference code associated with this payout, if you provided one. |
+| `bankDetails.bank`   | string  | Bank name/code for the payout destination account. |
+| `bankDetails.branch` | string  | Bank branch for the payout destination account.  |
+| `bankDetails.account`| string  | Bank account number for the payout destination. |
+| `creation`           | string  | Timestamp when the payout transaction was created (`yyyy-MM-dd HH:mm:ss`). |
+| `receipt`            | string  | URL or reference details of the payout receipt, if available and generated. |
+
+### Payout Error Codes
+
+When a Payout Notification has `success: false`, the `error_code` field provides a specific reason for the failure. Here are the codes mentioned in the original text:
+
+| Code     | Description (Portuguese from original text) | Possible Meaning (Translation/Interpretation) |
+| :------- | :------------------------------------------ | :-------------------------------------------- |
+| `PE0001` | Os dados bancarios fornecidos não validos   | The bank details provided are not valid.      |
+| `PE0002` | A titularidade da conta não pertence ao documento informado | The account ownership (holder name/document) does not match the provided identification document (e.g., CPF/CNPJ). |
+| `PE0003` | A conta nao aceita movimentacoes - (MOTIVOS) | The destination account does not accept transfers/transactions - (Specific REASONS might be provided by the bank). |
+| `PE0004` | OUTROS - (MOTIVOS)                          | Other unspecified reasons - (Specific REASONS might be provided). Check the `message` field in the notification payload for more context. |

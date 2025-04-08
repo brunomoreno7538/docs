@@ -1,0 +1,23 @@
+---
+title: 'Architecture'
+description: 'Overview of the PayMee API integration model, endpoints, and HTTP methods used.'
+---
+Integration with PayMee is performed through **Web Services**. The model employed is quite simple, utilizing two main base URLs (endpoints):
+
+* **Production Endpoint:** For live, real-time operations.
+    [https://api.paymee.com.br/](https://api.paymee.com.br/)
+
+* **Sandbox Endpoint:** For testing and development.
+    [https://apisandbox.paymee.com.br/](https://apisandbox.paymee.com.br/)
+
+These endpoints receive `HTTP` messages using standard methods (`POST`, `GET`, `PUT`). Each message type must be sent to a specific **resource**, identified by its path (URI) appended to the base endpoint URL.
+
+## HTTP Methods
+
+The primary `HTTP` methods used by the PayMee API are detailed below:
+
+| Method | Description                                                                 | Example Usage                          |
+| :----- | :-------------------------------------------------------------------------- | :------------------------------------- |
+| `POST` | Used to **create** new resources or send information to be processed.       | Creating a new transaction.            |
+| `PUT`  | Used to **update** an already existing resource.                             | Refunding or canceling a transaction. |
+| `GET`  | Used for **querying** (retrieving information about) existing resources. | Querying transaction details.        |
