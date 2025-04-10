@@ -112,12 +112,12 @@
                         "type": "string",
                         "format": "email",
                         "description": "Customer email address",
-                        "example": "john.doe@example.com"
+                        "example": "foo@bar.com"
                       },
                       "mobile_number": {
                         "type": "string",
                         "description": "Customer mobile phone number",
-                        "example": "1234567890"
+                        "example": "11999999999"
                       },
                       "document": {
                         "type": "object",
@@ -135,7 +135,7 @@
                           "number": {
                             "type": "string",
                             "description": "Document number",
-                            "example": "12345678901"
+                            "example": "00000000000"
                           }
                         }
                       },
@@ -202,11 +202,11 @@
                     "customer": {
                       "name": "John Doe",
                       "birth": "1970-01-01",
-                      "email": "john.doe@example.com",
-                      "mobile_number": "1234567890",
+                      "email": "foo@bar.com",
+                      "mobile_number": "11999999999",
                       "document": {
                         "type": "CPF",
-                        "number": "12345678901"
+                        "number": "00000000000"
                       },
                       "address": {
                         "zipcode": "12345678",
@@ -216,62 +216,6 @@
                         "neighborhood": "Downtown",
                         "city": "City",
                         "state": "ST"
-                      }
-                    }
-                  }
-                },
-                "VehicleFinancingLoan": {
-                  "summary": "Vehicle financing loan request",
-                  "value": {
-                    "proposal_id": "veh789",
-                    "reference_code": "CAR2023",
-                    "max_age": 120,
-                    "discriminator": "Vehicle financing",
-                    "final_amount": 50000.00,
-                    "customer": {
-                      "name": "Maria Silva",
-                      "birth": "1985-05-15",
-                      "email": "maria.silva@example.com",
-                      "mobile_number": "5511987654321",
-                      "document": {
-                        "type": "CPF",
-                        "number": "98765432101"
-                      },
-                      "address": {
-                        "zipcode": "01310100",
-                        "street": "Avenida Paulista",
-                        "number": "456",
-                        "complement": "Bloco B",
-                        "neighborhood": "Bela Vista",
-                        "city": "São Paulo",
-                        "state": "SP"
-                      }
-                    }
-                  }
-                },
-                "ShortTermLoan": {
-                  "summary": "Short-term small loan request",
-                  "value": {
-                    "proposal_id": "sml456",
-                    "reference_code": "QCKLN123",
-                    "max_age": 30,
-                    "final_amount": 500.00,
-                    "customer": {
-                      "name": "Carlos Oliveira",
-                      "birth": "1990-10-20",
-                      "email": "carlos.oliveira@example.com",
-                      "mobile_number": "5521987651234",
-                      "document": {
-                        "type": "CPF",
-                        "number": "12378945601"
-                      },
-                      "address": {
-                        "zipcode": "22070010",
-                        "street": "Rua Copacabana",
-                        "number": "789",
-                        "neighborhood": "Copacabana",
-                        "city": "Rio de Janeiro",
-                        "state": "RJ"
                       }
                     }
                   }
@@ -417,8 +361,8 @@
                           "number": "00000000000",
                           "type": "CPF"
                         },
-                        "email": "ti@paymee.com.br",
-                        "name": "FOO BAR",
+                        "email": "foo@bar.com",
+                        "name": "JOHN DOE",
                         "phone": {
                           "number": "+5511999999999",
                           "type": "MOBILE"
@@ -694,7 +638,7 @@
                           "number": {
                             "type": "string",
                             "description": "Document number (CPF for individuals)",
-                            "example": "12345678901"
+                            "example": "00000000000"
                           },
                           "type": {
                             "type": "string",
@@ -708,7 +652,7 @@
                         "type": "string",
                         "format": "email",
                         "description": "Customer's email address",
-                        "example": "john.doe@example.com"
+                        "example": "foo@bar.com"
                       },
                       "income": {
                         "type": "number",
@@ -723,7 +667,7 @@
                       "phone": {
                         "type": "string",
                         "description": "Customer's phone number",
-                        "example": "1234567890"
+                        "example": "11999999999"
                       }
                     }
                   },
@@ -785,13 +729,13 @@
                       },
                       "birth": "1980-01-01",
                       "document": {
-                        "number": "12345678901",
+                        "number": "00000000000",
                         "type": "CPF"
                       },
-                      "email": "john.doe@example.com",
+                      "email": "foo@bar.com",
                       "income": 5000,
                       "name": "John Doe",
-                      "phone": "1234567890"
+                      "phone": "11999999999"
                     },
                     "products": [
                       {
@@ -971,7 +915,7 @@
                       ]
                     }
                   },
-                  "NoProposalsFound": {
+                  "No proposals found response": {
                     "summary": "No proposals found",
                     "value": {
                       "status": -1,
@@ -1143,17 +1087,17 @@
                   "value": {
                     "currency": "BRL",
                     "amount": 11.00,
-                    "referenceCode": "019922111121276112",
+                    "referenceCode": "refcode12345",
                     "maxAge": 120,
                     "paymentMethod": "PIX",
                     "callbackURL": "https://foo.bar/paymeeListener",
                     "shopper": {
                       "id": "24391203",
                       "email": "foo@bar.com",
-                      "name": "JHON DOE",
+                      "name": "JOHN DOE",
                       "document": {
                         "type": "CPF",
-                        "number": "47737889841"
+                        "number": "00000000000"
                       },
                       "phone": {
                         "type": "MOBILE",
@@ -1543,7 +1487,7 @@
                         },
                         "referenceCode": {
                           "type": "string",
-                          "example": "01992211212765"
+                          "example": "refcode12345"
                         },
                         "saleCode": {
                           "type": "string",
@@ -1588,7 +1532,7 @@
                             },
                             "name": {
                               "type": "string",
-                              "example": "JHON DOE"
+                              "example": "JOHN DOE"
                             },
                             "phone": {
                               "type": "object",
@@ -1639,7 +1583,7 @@
                           },
                           "email": "foo@bar.com",
                           "id": "24391203",
-                          "name": "JHON DOE",
+                          "name": "JOHN DOE",
                           "phone": {
                             "number": "11999990000",
                             "type": "MOBILE"
@@ -1684,7 +1628,7 @@
                         "amount": 11,
                         "id": 27736,
                         "uuid": "56087f1f-9944-3d52-ac3d-50f23ad74ec2",
-                        "referenceCode": "019922112127615",
+                        "referenceCode": "refcode12345",
                         "saleCode": "00027736",
                         "shopper": {
                           "bankDetails": {
@@ -1697,7 +1641,7 @@
                           },
                           "email": "foo@bar.com",
                           "id": "24391203",
-                          "name": "JHON DOE",
+                          "name": "JOHN DOE",
                           "phone": {
                             "number": "11999990000",
                             "type": "MOBILE"
@@ -1741,7 +1685,7 @@
                         "amount": 11,
                         "id": 2423,
                         "uuid": "81d588cb-4fec-3088-960d-6881b8749247",
-                        "referenceCode": "01992211212765",
+                        "referenceCode": "refcode12345",
                         "shopper": {
                           "bankDetails": {
                             "account": "00011-0",
@@ -1753,7 +1697,7 @@
                           },
                           "email": "foo@bar.com",
                           "id": "24391203",
-                          "name": "JHON DOE",
+                          "name": "JOHN DOE",
                           "phone": {
                             "number": "11999990000",
                             "type": "MOBILE"
@@ -2051,20 +1995,20 @@
                     "currency": "BRL",
                     "maxAge": 120,
                     "paymentMethod": "ITAU_TRANSFER_PFF",
-                    "referenceCode": "0199201120511",
+                    "referenceCode": "refcode12345",
                     "shopper": {
                       "bankDetails": {
                         "account": "12345-6",
                         "branch": "1234"
                       },
                       "document": {
-                        "number": "06827142914",
+                        "number": "00000000000",
                         "type": "CPF"
                       },
                       "email": "foo@bar.com.br",
-                      "name": "JOAO ALBERTO",
+                      "name": "JOHN DOE",
                       "phone": {
-                        "number": "14981212047",
+                        "number": "11999990000",
                         "type": "WORK"
                       }
                     }
@@ -2095,7 +2039,7 @@
                   "referenceCode": {
                     "type": "string",
                     "description": "Unique order identifier",
-                    "example": "0199201120511",
+                    "example": "refcode12345",
                     "maxLength": 50
                   },
                   "maxAge": {
@@ -2136,7 +2080,7 @@
                       "name": {
                         "type": "string",
                         "description": "Shopper's name",
-                        "example": "JOAO ALBERTO",
+                        "example": "JOHN DOE",
                         "maxLength": 255
                       },
                       "email": {
@@ -2162,7 +2106,7 @@
                           "number": {
                             "type": "string",
                             "description": "Shopper's document number",
-                            "example": "06827142914",
+                            "example": "00000000000",
                             "maxLength": 25
                           }
                         }
@@ -2184,7 +2128,7 @@
                           "number": {
                             "type": "string",
                             "description": "Shopper's phone number",
-                            "example": "14981212047",
+                            "example": "11999990000",
                             "maxLength": 25
                           }
                         }
@@ -2252,7 +2196,7 @@
                         },
                         "referenceCode": {
                           "type": "string",
-                          "example": "0199201120511"
+                          "example": "refcode12345"
                         },
                         "saleCode": {
                           "type": "string",
@@ -2279,7 +2223,7 @@
                               "properties": {
                                 "number": {
                                   "type": "string",
-                                  "example": "62012777066"
+                                  "example": "00000000000"
                                 },
                                 "type": {
                                   "type": "string",
@@ -2293,7 +2237,7 @@
                             },
                             "name": {
                               "type": "string",
-                              "example": "JHON DOE"
+                              "example": "JOHN DOE"
                             },
                             "phone": {
                               "type": "object",
@@ -2330,7 +2274,7 @@
                       "response": {
                         "amount": 1.99,
                         "gatewayURL": "https://secure.paymee.com.br/redir/55f6bb4e-d1aa-361e-bce3-758fd57ab6d0",
-                        "referenceCode": "0199201120511",
+                        "referenceCode": "refcode12345",
                         "saleCode": "0002405",
                         "shopper": {
                           "bankDetails": {
@@ -2338,11 +2282,11 @@
                             "branch": "1234"
                           },
                           "document": {
-                            "number": "62012777066",
+                            "number": "00000000000",
                             "type": "CPF"
                           },
                           "email": "foo@bar.com.br",
-                          "name": "JHON DOE",
+                          "name": "JOHN DOE",
                           "phone": {
                             "number": "11999990000",
                             "type": "MOBILE"
@@ -3223,12 +3167,12 @@
                         "pixKey": "00000000000"
                       },
                       "document": {
-                        "number": "01234567890",
+                        "number": "00000000000",
                         "type": "CPF"
                       }
                     },
                     "callbackURL": "https://www2.paymee.com.br/callback.php",
-                    "email": "ti@paymee.com.br",
+                    "email": "foo@bar.com",
                     "notes": "pixKey"
                   }
                 },
@@ -3244,12 +3188,12 @@
                         "account": "000001-5"
                       },
                       "document": {
-                        "number": "01234567890",
+                        "number": "00000000000",
                         "type": "CPF"
                       }
                     },
                     "callbackURL": "https://www2.paymee.com.br/callback.php",
-                    "email": "ti@paymee.com.br",
+                    "email": "foo@bar.com",
                     "notes": "bank transfer",
                     "referenceCode": "TRANSFERENCIA001"
                   }
@@ -3303,7 +3247,7 @@
                   "email": {
                     "type": "string",
                     "description": "Email for notifications",
-                    "example": "ti@paymee.com.br",
+                    "example": "foo@bar.com",
                     "format": "email"
                   },
                   "beneficiary": {
@@ -3338,7 +3282,7 @@
                           "number": {
                             "type": "string",
                             "description": "Beneficiary's document number",
-                            "example": "01234567890",
+                            "example": "00000000000",
                             "maxLength": 20
                           }
                         }
@@ -3850,7 +3794,7 @@
                       ]
                     }
                   },
-                  "Payout with wrong status": {
+                  "Payout with wrong status response": {
                     "summary": "Payout already in processing",
                     "value": {
                       "status": -1,
@@ -4026,11 +3970,11 @@
                                   "properties": {
                                     "documento": {
                                       "type": "string",
-                                      "example": "01234567890"
+                                      "example": "00000000000"
                                     },
                                     "nome": {
                                       "type": "string",
-                                      "example": "FOO BAR"
+                                      "example": "JOHN DOE"
                                     },
                                     "nomeFantasia": {
                                       "nullable": true,
@@ -4093,7 +4037,7 @@
                                     },
                                     "nomeFantasia": {
                                       "nullable": true,
-                                      "example": null
+                                      "example": "PAYMEE"
                                     },
                                     "tipoDocumento": {
                                       "type": "string",
@@ -4145,8 +4089,8 @@
                             },
                             "ispb": "00000000",
                             "pessoa": {
-                              "documento": "01234567890",
-                              "nome": "FOO BAR",
+                              "documento": "00000000000",
+                              "nome": "JOHN DOE",
                               "nomeFantasia": null,
                               "tipoDocumento": "CPF"
                             }
@@ -4164,12 +4108,11 @@
                             "pessoa": {
                               "documento": "28683892000191",
                               "nome": "PAYMEE BRASIL SERVICOS DE PAGAMENTOS S.A",
-                              "nomeFantasia": null,
+                              "nomeFantasia": "PAYMEE",
                               "tipoDocumento": "CNPJ"
                             }
                           }
-                        },
-                        "tid": 49916
+                        }
                       }
                     }
                   }
@@ -4509,7 +4452,7 @@
                       "qrCode": {
                         "plain":  "00020126890014BR.GOV.BCB.PIX2567api-pix.bancobs2.com.br/spi/v2/d4dd5d08-d6ff-4b41-913c-4d9344e9a27c52040000530398654040.015802BR5906PAYMEE6014Belo Horizonte61083038040362070503***63040857",
                         "base64": "iVBORw0KGgoAAAANSUhEUgAAAPoAAAD6CAIAAAAHjs1qAAAGJklEQVR42u3cUW6cQBBF…",
-                        "url":    "https://api.paymee.com.br/resources/payments/pix/qrcode/4ccad173-6206-3b30-a7ce-4ea455040ba2"
+                        "url":    "https://api.paymee.com.br/resources/payments/pix/qrcode/4ccad173-6206-3b30-a7ce-4ea455040ba1"
                       }
                     }
                   }
@@ -4772,7 +4715,7 @@
                           "name": {
                             "type": "string",
                             "description": "Shopper name.",
-                            "example": "JHON DOE"
+                            "example": "JOHN DOE"
                           },
                           "document": {
                             "type": "object",
@@ -4998,7 +4941,7 @@
                         },
                         "shipping": 0,
                         "shopper": {
-                          "bankDetails": {},
+                          "bankDetails": { "account": "00011-0", "branch": "0001" },
                           "document": {
                             "number": "00000000000",
                             "type": "CPF"
@@ -5058,7 +5001,7 @@
                             "type": "CPF"
                           },
                           "email": "foo@bar.com",
-                          "name": "JHON DOE",
+                          "name": "JOHN DOE",
                           "phone": {
                             "number": "11999990000",
                             "type": "MOBILE"
@@ -5409,7 +5352,7 @@
               "name": "referenceCode",
               "in": "query",
               "description": "Merchant internal order identification",
-              "schema": { "type": "string", "maxLength": 50, "example": "XXXXXXXXX" }
+              "schema": { "type": "string", "maxLength": 50, "example": "refcode12345" }
             },
             {
               "name": "situation",
@@ -5481,7 +5424,7 @@
                           "properties": {
                             "id":            { "type": "number", "description": "Internal transaction ID", "example": 346 },
                             "uuid":          { "type": "string", "description": "Transaction UUID", "example": "a3b27666-49cc-3549-b621-60318a5e61e7" },
-                            "referenceCode": { "type": "string", "description": "Merchant internal order identification", "example": "XXXXXXXXX" },
+                            "referenceCode": { "type": "string", "description": "Merchant internal order identification", "example": "refcode12345" },
                             "type":          { "type": "string", "description": "Transaction type", "example": "SALE" },
                             "situation":     { "type": "string", "description": "Transaction situation", "example": "PAID" },
                             "currency":      { "type": "string", "description": "ISO‑4217 currency code", "example": "BRL" },
@@ -5498,10 +5441,10 @@
                               "description": "Information about the shopper",
                               "properties": {
                                 "email":       { "type": "string", "description": "Shopper e‑mail", "example": "foo@bar.com" },
-                                "name":        { "type": "string", "description": "Shopper full name" },
-                                "document":    { "type": "object", "description": "Shopper document information" },
-                                "phone":       { "type": "object", "description": "Shopper phone information" },
-                                "bankDetails": { "type": "object", "description": "Shopper bank details" }
+                                "name":        { "type": "string", "description": "Shopper full name", "example": "JOHN DOE" },
+                                "document":    { "type": "object", "description": "Shopper document information", "example": { "type": "CPF", "number": "00000000000" }},
+                                "phone":       { "type": "object", "description": "Shopper phone information", "example": { "type": "MOBILE", "number": "11999990000" } },
+                                "bankDetails": { "type": "object", "description": "Shopper bank details", "example": { "account": "00011-0", "branch": "0001" } }
                               }
                             },
                             "items": {
@@ -5835,7 +5778,7 @@
                             "number": { "type": "string", "example": "00000000000" }
                           }
                         },
-                        "email": { "type": "string", "example": "JHON DOE" },
+                        "email": { "type": "string", "example": "JOHN DOE" },
                         "phone": {
                           "type": "object",
                           "properties": {
@@ -5860,9 +5803,12 @@
                       "currentBalance": 16495.84,
                       "discounts": 0,
                       "shopper": {
-                        "bankDetails": {},
+                        "bankDetails": {
+                            "account": "12345-6",
+                            "branch": "1234"
+                          },
                         "document": { "type": "CPF", "number": "00000000000" },
-                        "email": "JHON DOE",
+                        "email": "JOHN DOE",
                         "phone": { "type": "MOBILE", "number": "11999990000" }
                       }
                     }
@@ -6255,7 +6201,7 @@
                           "responseCode": 200,
                           "request": {
                             "headers": { "Content-type": "application/json" },
-                            "payload": "{\"saleToken\":\"{transactionUUID}\",\"referenceCode\":\"01992211212782433139\",\"currency\":\"BRL\",\"amount\":11.00,\"shopper\":{\"fullName\":\"JHON DOE\",\"firstName\":\"JHON\",\"lastName\":\"DOE\",\"email\":\"ti@paymee.com.br\",\"cpf\":\"00000000000\"},\"date\":\"2019-02-12 17:29:33\",\"newStatus\":\"PAID\"}"
+                            "payload": "{\"saleToken\":\"{transactionUUID}\",\"referenceCode\":\"01992211212782433139\",\"currency\":\"BRL\",\"amount\":11.00,\"shopper\":{\"fullName\":\"JOHN DOE\",\"firstName\":\"JHON\",\"lastName\":\"DOE\",\"email\":\"foo@bar.com\",\"cpf\":\"00000000000\"},\"date\":\"2019-02-12 17:29:33\",\"newStatus\":\"PAID\"}"
                           },
                           "response": {
                             "headers": { "Content-Length": "0" },
@@ -6618,7 +6564,7 @@
                   "type": "object",
                   "properties": {
                     "document": { "type": "string", "description": "Payer document number (CPF/CNPJ)", "example": "00000000000" },
-                    "name":     { "type": "string", "description": "Payer name", "example": "FOO BAR" }
+                    "name":     { "type": "string", "description": "Payer name", "example": "JOHN DOE" }
                   }
                 }
               }
@@ -6633,7 +6579,7 @@
                   "end_to_end": "E60701190202206091923DY53C3Y9TIN",
                   "payer": {
                     "document": "00000000000",
-                    "name": "FOO BAR"
+                    "name": "JOHN DOE"
                   }
                 }
               }
@@ -6761,7 +6707,7 @@
     "/v1.1/checkout/transparent/{transactionUUID}": {
       "put": {
         "summary": "Renew canceled pix",
-        "description": "# renew canceled pix\n\nTo renew a transaction throught PayMee, it is necessary to send a request using the PUT method to the **checkout** resource and a previous transaction UUID, as shown. This example covers the minimum of fields required to be submitted for authorization.\n\n## Request\n\n| PROPERTY | TYPE | SIZE | REQUIRED | DESCRIPTION |\n| --- | --- | --- | --- | --- |\n| maxAgefalse | number | 43200 | true | Sale max age in minutes |\n\n| PROPERTY | TYPE | DESCRIPTION |\n| --- | --- | --- |\n| status | number | response status code |\n| message | string | response status message |\n| response.email | string | registered shopper email |\n| response.referenceCode | string | registered unique order identifier |\n| response.amount | number | registered order amount |\n| response.saleCode | number | Paymee's internal sale code |\n| response.uuid | string | internal transaction uuid |\n| response.shopper.id | string | the same as stated previously (if stated) |\n| response.shopper.email | string | the same as stated previously |\n| response.shopper.name | string | the same as stated previously (if stated) |\n| response.shopper.document.type | string | the same as stated previously |\n| response.shopper.document.number | string | the same as stated previously |\n| response.shopper.phone.type | string | the same as stated previously |\n| response.shopper.phone.number | string | the same as stated previously |\n| response.shopper.bankDetails.branch | string | the same as stated previously |\n| response.shopper.bankDetails.account | string | the same as stated previously |\n| response.instructions.chosen | string | chosen bank method |\n| response.instructions.name | string | chosen bank name |\n| response.instructions.label | string | chosen bank description |\n| response.instructions.beneficiary_branch | string | branch number to pay |\n| response.instructions.beneficiary_op | string | operation code (only CEF) |\n| response.instructions.beneficiary_account | string | account number and verifing digit to pay |\n| response.instructions.need_identification | boolean | tells if has identification code when pay |\n| response.instructions.identification | string | identification code to pay |\n| response.instructions.steps | array\\[string\\] | simple steps description to display |\n| response.instructions.redirect_urls.desktop | string | default bank website URL |\n| response.instructions.redirect_urls.ios | string | default bank app URL |\n| response.instructions.redirect_urls.android | string | default bank app URL |\n| response.instructions.redirect_urls.windows_phone | string | default bank app URL |\n\n## Response for Pix checkout\n\n| PROPERTY | TYPE | DESCRIPTION |\n| --- | --- | --- |\n| status | number | response status code |\n| message | string | response status message |\n| response.email | string | registered shopper email |\n| response.referenceCode | string | registered unique order identifier |\n| response.amount | number | registered order amount |\n| response.saleCode | number | Paymee's internal sale code |\n| response.uuid | string | internal transaction uuid |\n| response.shopper.id | string | the same as stated previously (if stated) |\n| response.shopper.email | string | the same as stated previously |\n| response.shopper.name | string | the same as stated previously (if stated) |\n| response.shopper.document.type | string | the same as stated previously |\n| response.shopper.document.number | string | the same as stated previously |\n| response.shopper.phone.type | string | the same as stated previously |\n| response.shopper.phone.number | string | the same as stated previously |\n| response.shopper.bankDetails.branch | string | the same as stated previously |\n| response.shopper.bankDetails.account | string | the same as stated previously |\n| response.instructions.chosen | string | pix chosen option |\n| response.instructions.label | string | pix chosen description |\n| response.instructions.beneficiary.qrcode.url | string | qrcode for payment url |\n| response.instructions.beneficiary.qrcode.base64 | string | qrcode in base64 encode |\n| response.instructions.beneficiary.qrcode.plain | string | qrcode in plain text |\n| response.instructions.beneficiary.keys.email | string | pix beneficiary key - email option |\n| response.instructions.beneficiary.keys.document | string | pix beneficiary key - document option |\n| response.instructions.steps.qrcode | array\\[string\\] | minimal steps for qrcode description to display |\n| response.instructions.steps.key | array\\[string\\] | minimal steps for key description to display |\n\n## Response for OpenBanking Initiator\n\n| PROPERTY | TYPE | DESCRIPTION |\n| --- | --- | --- |\n| status | number | response status code |\n| message | string | response status message |\n| response.email | string | registered shopper email |\n| response.referenceCode | string | registered unique order identifier |\n| response.amount | number | registered order amount |\n| response.saleCode | number | Paymee's internal sale code |\n| response.uuid | string | internal transaction uuid |\n| response.shopper.id | string | the same as stated previously (if stated) |\n| response.shopper.email | string | the same as stated previously |\n| response.shopper.name | string | the same as stated previously (if stated) |\n| response.shopper.document.type | string | the same as stated previously |\n| response.shopper.document.number | string | the same as stated previously |\n| response.shopper.phone.type | string | the same as stated previously |\n| response.shopper.phone.number | string | the same as stated previously |\n| response.shopper.bankDetails.branch | string | the same as stated previously |\n| response.shopper.bankDetails.account | string | the same as stated previously |\n| response.instructions.chosen | string | pix chosen option |\n| response.instructions.label | string | pix chosen description |\n| response.instructions.payment_id | string | openbanking payment id reference |\n| response.instructions.redirect_url | string | redirect URL for openbanking authentication |\n\n## available status values\n\n| code | message | description |\n| --- | --- | --- |\n| 0 | \"success\" | operation was successful |\n| \\-1 | \"validation failure\" | A validation error occurred when processing the request |\n| 1001 | \"duplicated referenceCode\" | the reference code must be unique |\n\n## available validation vailure responses\n\n| field | error | message |\n| --- | --- | --- |\n| shopper.document.number | shopper.document.number.banned | banned shopper |\n| shopper.document.number | shopper.document.number.not_allowed | document type not allowed |\n| referenceCode | referenceCode.duplicated | duplicated reference code |\n| paymentMethod | paymentMethod.invalid | inform a valid payment method |\n| shopper.bankDetails | shopper.bankDetails.isNull | please inform a valid bank details |\n| shopper.phone.number | shopper.phone.number.isNull | please inform a valid phone number |\n| shopper.document.number | shopper.document.number.invalidDocument | the shopper document XXXXXXXXXXX is not valid |\n| shopper.document.number | shopper.document.number.limit | the amount exceeded daily limit |\n| amount | amount.min | must be greater than 0.01 |\n| referenceCode | referenceCode.lenght | referenceCode must have length 1 up to 100 |\n| maxAge | maxAge.limit | maxAge must be at least 1 and up to 4320 minutes |\n| paymentMethod | paymentMethod.is_null | paymentMethod cannot be null |\n| shopper | shopper.is_null | shopper cannot be null |\n| shopper.id | shopper.id.max_lenght | shopper id must have up to 255 characters |\n| shopper.name | shopper.name.length | shopper name must have up to 255 characters |\n| shopper.name | shopper.name.is_null | shopper name cannot be null |\n| shopper.email | shopper.email.length | please fill a valid email |\n| shopper.document | shopper.document.is_null | shopper document cannot be null |\n| shopper.document.type | shopper.document.type.invalid | please inform a valid document type |\n| shopper.document.number | shopper.document.number.invalid | lenght must be between 2 and 25 |\n| shopper.bankDetails.branch | shopper.bankDetails.branch.invalid | please inform a valid branch |\n| shopper.bankDetails.account | shopper.bankDetails.account.invalid | please inform a valid bank account |\n| shopper.phone | shopper.phone.is_null | shopper.phone cannot be null |\n| shopper.phone.type | shopper.phone.type.invalid | please inform a valid phone type |\n| shopper.phone.number | shopper.phone.number.invalid | please inform a valid phone number |",
+        "description": "# renew canceled pix\n\nTo renew a transaction throught PayMee, it is necessary to send a request using the PUT method to the **checkout** resource and a previous transaction UUID, as shown. This example covers the minimum of fields required to be submitted for authorization.\n\n## Request\n\n| PROPERTY | TYPE | SIZE | REQUIRED | DESCRIPTION |\n| --- | --- | --- | --- | --- |\n| maxAgefalse | number | 43200 | true | Sale max age in minutes |\n\n| PROPERTY | TYPE | DESCRIPTION |\n| --- | --- | --- |\n| status | number | response status code |\n| message | string | response status message |\n| response.email | string | registered shopper email |\n| response.referenceCode | string | registered unique order identifier |\n| response.amount | number | registered order amount |\n| response.saleCode | number | Paymee's internal sale code |\n| response.uuid | string | internal transaction uuid |\n| response.shopper.id | string | the same as stated previously (if stated) |\n| response.shopper.email | string | the same as stated previously |\n| response.shopper.name | string | the same as stated previously (if stated) |\n| response.shopper.document.type | string | the same as stated previously |\n| response.shopper.document.number | string | the same as stated previously |\n| response.shopper.phone.type | string | the same as stated previously |\n| response.shopper.phone.number | string | the same as stated previously |\n| response.shopper.bankDetails.branch | string | the same as stated previously |\n| response.shopper.bankDetails.account | string | the same as stated previously |\n| response.instructions.chosen | string | chosen bank method |\n| response.instructions.name | string | chosen bank name |\n| response.instructions.label | string | chosen bank description |\n| response.instructions.beneficiary_branch | string | branch number to pay |\n| response.instructions.beneficiary_op | string | operation code (only CEF) |\n| response.instructions.beneficiary_account | string | account number and verifing digit to pay |\n| response.instructions.need_identification | boolean | tells if has identification code when pay |\n| response.instructions.identification | string | identification code to pay |\n| response.instructions.steps | array\\[string\\] | simple steps description to display |\n| response.instructions.redirect_urls.desktop | string | default bank website URL |\n| response.instructions.redirect_urls.ios | string | default bank app URL |\n| response.instructions.redirect_urls.android | string | default bank app URL |\n| response.instructions.redirect_urls.windows_phone | string | default bank app URL |\n\n## Response for Pix checkout\n\n| PROPERTY | TYPE | DESCRIPTION |\n| --- | --- | --- |\n| status | number | response status code |\n| message | string | response status message |\n| response.email | string | registered shopper email |\n| response.referenceCode | string | registered unique order identifier |\n| response.amount | number | registered order amount |\n| response.saleCode | number | Paymee's internal sale code |\n| response.uuid | string | internal transaction uuid |\n| response.shopper.id | string | the same as stated previously (if stated) |\n| response.shopper.email | string | the same as stated previously |\n| response.shopper.name | string | the same as stated previously (if stated) |\n| response.shopper.document.type | string | the same as stated previously |\n| response.shopper.document.number | string | the same as stated previously |\n| response.shopper.phone.type | string | the same as stated previously |\n| response.shopper.phone.number | string | the same as stated previously |\n| response.shopper.bankDetails.branch | string | the same as stated previously |\n| response.shopper.bankDetails.account | string | the same as stated previously |\n| response.instructions.chosen | string | pix chosen option |\n| response.instructions.label | string | pix chosen description |\n| response.instructions.beneficiary.qrcode.url | string | qrcode for payment url |\n| response.instructions.beneficiary.qrcode.base64 | string | qrcode in base64 encode |\n| response.instructions.beneficiary.qrcode.plain | string | qrcode in plain text |\n| response.instructions.beneficiary.keys.email | string | pix beneficiary key - email option |\n| response.instructions.beneficiary.keys.document | string | pix beneficiary key - document option |\n| response.instructions.steps.qrcode | array\\[string\\] | minimal steps for qrcode description to display |\n| response.instructions.steps.key | array\\[string\\] | minimal steps for key description to display |\n\n## Response for OpenBanking Initiator\n\n| PROPERTY | TYPE | DESCRIPTION |\n| --- | --- | --- |\n| status | number | response status code |\n| message | string | response status message |\n| response.email | string | registered shopper email |\n| response.referenceCode | string | registered unique order identifier |\n| response.amount | number | registered order amount |\n| response.saleCode | number | Paymee's internal sale code |\n| response.uuid | string | internal transaction uuid |\n| response.shopper.id | string | the same as stated previously (if stated) |\n| response.shopper.email | string | the same as stated previously |\n| response.shopper.name | string | the same as stated previously (if stated) |\n| response.shopper.document.type | string | the same as stated previously |\n| response.shopper.document.number | string | the same as stated previously |\n| response.shopper.phone.type | string | the same as stated previously |\n| response.shopper.phone.number | string | the same as stated previously |\n| response.shopper.bankDetails.branch | string | the same as stated previously |\n| response.shopper.bankDetails.account | string | the same as stated previously |\n| response.instructions.chosen | string | pix chosen option |\n| response.instructions.label | string | pix chosen description |\n| response.instructions.payment_id | string | openbanking payment id reference |\n| response.instructions.redirect_url | string | redirect URL for openbanking authentication |\n\n## available status values\n\n| code | message | description |\n| --- | --- | --- |\n| 0 | \"success\" | operation was successful |\n| \\-1 | \"validation failure\" | A validation error occurred when processing the request |\n| 1001 | \"duplicated referenceCode\" | the reference code must be unique |\n\n## available validation vailure responses\n\n| field | error | message |\n| --- | --- | --- |\n| shopper.document.number | shopper.document.number.banned | banned shopper |\n| shopper.document.number | shopper.document.number.not_allowed | document type not allowed |\n| referenceCode | referenceCode.duplicated | duplicated reference code |\n| paymentMethod | paymentMethod.invalid | inform a valid payment method |\n| shopper.bankDetails | shopper.bankDetails.isNull | please inform a valid bank details |\n| shopper.phone.number | shopper.phone.number.isNull | please inform a valid phone number |\n| shopper.document.number | shopper.document.number.invalidDocument | the shopper document refcode12345XX is not valid |\n| shopper.document.number | shopper.document.number.limit | the amount exceeded daily limit |\n| amount | amount.min | must be greater than 0.01 |\n| referenceCode | referenceCode.lenght | referenceCode must have length 1 up to 100 |\n| maxAge | maxAge.limit | maxAge must be at least 1 and up to 4320 minutes |\n| paymentMethod | paymentMethod.is_null | paymentMethod cannot be null |\n| shopper | shopper.is_null | shopper cannot be null |\n| shopper.id | shopper.id.max_lenght | shopper id must have up to 255 characters |\n| shopper.name | shopper.name.length | shopper name must have up to 255 characters |\n| shopper.name | shopper.name.is_null | shopper name cannot be null |\n| shopper.email | shopper.email.length | please fill a valid email |\n| shopper.document | shopper.document.is_null | shopper document cannot be null |\n| shopper.document.type | shopper.document.type.invalid | please inform a valid document type |\n| shopper.document.number | shopper.document.number.invalid | lenght must be between 2 and 25 |\n| shopper.bankDetails.branch | shopper.bankDetails.branch.invalid | please inform a valid branch |\n| shopper.bankDetails.account | shopper.bankDetails.account.invalid | please inform a valid bank account |\n| shopper.phone | shopper.phone.is_null | shopper.phone cannot be null |\n| shopper.phone.type | shopper.phone.type.invalid | please inform a valid phone type |\n| shopper.phone.number | shopper.phone.number.invalid | please inform a valid phone number |",
         "operationId": "renewCanceledPix",
         "parameters": [
           {
@@ -6952,7 +6898,7 @@
                             },
                             "name": {
                               "type": "string",
-                              "example": "JHON DOE"
+                              "example": "JOHN DOE"
                             },
                             "phone": {
                               "type": "object",
@@ -7025,7 +6971,7 @@
                           },
                           "email": "foo@bar.com",
                           "id": "24391203",
-                          "name": "JHON DOE",
+                          "name": "JOHN DOE",
                           "phone": {
                             "number": "11999990000",
                             "type": "MOBILE"
