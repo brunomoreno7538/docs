@@ -1960,7 +1960,7 @@
           "Checkouts"
         ],
         "summary": "Redirect checkout",
-        "description": "# Generate a simple transaction\n\nTo generate a transaction through PayMee, it is necessary to send a request using the POST method to the checkout resource, as shown. This example covers the minimum of submitted fields required for authorization.",
+        "description": "To generate a transaction through PayMee, it is necessary to send a request using the POST method to the checkout resource, as shown. This example covers the minimum of submitted fields required for authorization.",
         "operationId": "redirectCheckout",
         "parameters": [
           {
@@ -2506,7 +2506,7 @@
           "Payouts"
         ],
         "summary": "Batch payout request",
-        "description": "# Payout batch request\n\nPayouts at PayMee are cash-out transactions;\n\nBefore we start, there are some important tips:\n 1. you must have sufficient funds;\n 2. you shoud provide a valid and complete beneficiary details\n 3. Register your server CIDR for production enviroment",
+        "description": "Payouts at PayMee are cash-out transactions;\n\nBefore we start, there are some important tips:\n 1. you must have sufficient funds;\n 2. you shoud provide a valid and complete beneficiary details\n 3. Register your server CIDR for production enviroment",
         "operationId": "batchPayoutRequest",
         "parameters": [
           {
@@ -3130,7 +3130,7 @@
           "Payouts"
         ],
         "summary": "Individual payout request",
-        "description": "# Payout indivual request\n\nPayouts at PayMee are cash-out transactions;\n\nBefore we start, there are some important tips:\n\n1. you must have sufficient funds;\n2. you shoud provide a valid and complete beneficiary details\n3. Register your server CIDR for production enviroment",
+        "description": "Payouts at PayMee are cash-out transactions;\n\nBefore we start, there are some important tips:\n\n1. you must have sufficient funds;\n2. you shoud provide a valid and complete beneficiary details\n3. Register your server CIDR for production enviroment",
         "operationId": "individualPayoutRequest",
         "parameters": [
           {
@@ -3653,7 +3653,7 @@
           "Payouts"
         ],
         "summary": "Cancel a payout",
-        "description": "# Payout cancelation\n\nBefore we start, there are some important notes:\n 1. the transactions should have **PENDING** status and not marked as **IN PROCESSING**",
+        "description": "Before we start, there are some important notes:\n 1. the transactions should have **PENDING** status and not marked as **IN PROCESSING**",
         "operationId": "cancelAPayout",
         "parameters": [
           {
@@ -4393,7 +4393,7 @@
     "/v1.1/transactions/pix/{transactionUUID}": {
       "get": {
         "summary": "Get pix data from a sale",
-        "description": "# Query a transaction\n\nTo query a transaction, do a GET as shown below.",
+        "description": "To query a transaction, do a GET as shown below.",
         "operationId": "getPixDataFromASale",
         "parameters": [
           {
@@ -5321,7 +5321,7 @@
     "/v1.1/transactions": {
       "get": {
           "summary": "Query transactions using filters",
-          "description": "# Querying transactions using filters\n\nUse the query parameters to filter the list of transactions returned.",
+          "description": "Use the query parameters to filter the list of transactions returned.",
           "operationId": "queryTransactionsUsingFilters",
           "parameters": [
             {
@@ -5519,7 +5519,7 @@
     "/v1.1/transactions/{saleUUID}/void": {
       "put": {
         "summary": "Cancel a transaction",
-        "description": "# Canceling a sale\n\nAllows the merchant to cancel a **PENDING** sale. Any other situation will return an error.",
+        "description": "Allows the merchant to cancel a **PENDING** sale. Any other situation will return an error.",
         "operationId": "cancelATransaction",
         "parameters": [
           {
