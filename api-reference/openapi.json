@@ -1102,6 +1102,10 @@
                       "phone": {
                         "type": "MOBILE",
                         "number": "11999990000"
+                      },
+                      "bankDetails": {
+                        "branch": "0001",
+                        "account": "00011-0"
                       }
                     }
                   }
