@@ -1414,7 +1414,7 @@
                                 },
                                 "url": {
                                   "type": "string",
-                                  "example": "https://apisandbox.paymee.com.br/payments/pix/qrcode/14fe1d3d-26f9-3790-8161-df091e8585da"
+                                  "example": "https://api.paymee.com.br/payments/pix/qrcode/14fe1d3d-26f9-3790-8161-df091e8585da"
                                 }
                               }
                             },
@@ -2196,7 +2196,7 @@
                         },
                         "gatewayURL": {
                           "type": "string",
-                          "example": "https://apisandbox.paymee.com.br/redir/55f6bb4e-d1aa-361e-bce3-758fd57ab6d0"
+                          "example": "https://api.paymee.com.br/redir/55f6bb4e-d1aa-361e-bce3-758fd57ab6d0"
                         },
                         "referenceCode": {
                           "type": "string",
@@ -6831,7 +6831,7 @@
                                 },
                                 "url": {
                                   "type": "string",
-                                  "example": "https://apisandbox.paymee.com.br/payments/pix/qrcode/14fe1d3d-26f9-3790-8161-df091e8585da"
+                                  "example": "https://api.paymee.com.br/payments/pix/qrcode/14fe1d3d-26f9-3790-8161-df091e8585da"
                                 }
                               }
                             },
@@ -6949,7 +6949,7 @@
                           "qrCode": {
                             "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPoAAAD6CAIAAAAHjs1qAAAEvklEQVR42u3ayXXDMBBEQeWftJ2ATzIw3QDqn7VwqeFhHj8/0jN9XALhLuEu4S7hLuEu4S7hLuEu4S7hLuEu3CXcJdwl3CXcJdwl3CXcJdwl3CXchbuEu4T7Xz8X7bsj3Hhxo+ee/Z3Je4o77rjjjjvuuOOOO+6444477rg3YPruVq361uQVmxz+tnuKO+6444477rjjjjvuuOOOO+647ya47zZkV5zZ85o85sl7ijvuuOOOO+6444477rjjjjvuuHdemraL3ong9EcY7rjjjjvuuOOOO+6444477rjjfu6l2XfMk6vSfUeIO+6444477rjjjjvuuOOOO+6438Q9O1qrjnlyAFYtNCevT6cf3HHHHXfccccdd9xxxx133HF/jfuJSzSfab6nuCOIO+6Y4o67z+COu8/gjrvP4P5aky88TS5Gn7uPKOOOu3DHHXfccccdd9xxx/1q7tklY9tCM/sCVvaY214+wx133HHHHXfccccdd9xxxx33F7hPDsm+BWLb+rJtaM9dleKOO+6444477rjjjjvuuOOO+2vcJy9fdj3XtkCcPNMGyrjjjjvuuOOOO+6444477rjjjnv2lCZfGlvF9MTVbXahiTvuuOOOO+6444477rjjjjvuuO9eDu5bok2i7F/h7Ru/zocj7rjjjjvuuOOOO+6444477rjfzX1yXZgdgP6FXfZ49t0L3HHHHXfccccdd9xxxx133HHH/W7K/QvESSiTr7Udv3fHHXfccccdd9xxxx133HHHHfcy7pO/0zZsd6Bc9a0nFpG444477rjjjjvuuOOOO+644x7l3r8K7F9oTg5bdgl7/CISd9xxxx133HHHHXfccccdd9zrua8aklNWXTvOtL/sgw933HHHHXfccccdd9xxxx133HFfu6Lat0TLLuyyS9jsGF+4iMQdd9xxxx133HHHHXfccccd9/pF5InLryzuycdB9uW8wNoXd9xxxx133HHHHXfccccdd9wf455F2X9jToHy/zv4xCISd9xxxx133HHHHXfccccdd9yj3PcRzNJp++XJ63zTgwZ33HHHHXfccccdd9xxxx133HFvI9g2ANlV4OT4BRamuOOOO+6444477rjjjjvuuOP+PPd9A7Dvv/aNaPZBkz3C+QHAHXfccccdd9xxxx133HHHHXfc2+hkobSde+erXbjjjjvuuOOOO+6444477rjjjvuJnfLqUgrl5Ng0rCZxxx133HHHHXfccccdd9xxx/1u7p9obbche177/mvV8Vy4d8cdd9xxxx133HHHHXfccccd9zLu2SXj5I2ZfPVtkvJNC1/ccccdd9xxxx133HHHHXfccce9bUHWj6BtbCYfGbjjjjvuuOOOO+6444477rjjjvvd3Pt/Jzv8+x4i86+R4Y477rjjjjvuuOOOO+6444477idyz55F/xifEu6444477rjjjjvuuOOOO+64454drVX/Nbn4y16N7GDjjjvuuOOOO+6444477rjjjjvua1nsq23pmX1AZAl2DgDuuOOOO+6444477rjjjjvuuN/NXWoOd+Eu4S7hLuEu4S7hLuEu4S7hLuEu4S7cJdwl3CXcJdwl3CXcJdwl3CXcJdyFu4S7dEm/llibksuxCZcAAAAASUVORK5CYII=",
                             "plain": "00020101021226720014br.gov.bcb.pix2550bx.com.br/pix/0fa55bba-cb0d-3e5a-8dd3-88af60f2a324520400005303986540647.925802BR5913PayMee Brasil\n6008BRASILIA62190515RP12345678-2019630445C8",
-                            "url": "https://apisandbox.paymee.com.br/payments/pix/qrcode/14fe1d3d-26f9-3790-8161-df091e8585da"
+                            "url": "https://api.paymee.com.br/payments/pix/qrcode/14fe1d3d-26f9-3790-8161-df091e8585da"
                           },
                           "steps": {
                             "key": [
@@ -7005,6 +7005,2092 @@
           }
         }
       ]
+    },
+    "/v1.1/pix-automatic/plans": {
+      "post": {
+        "tags": [
+          "Pix Automatic"
+        ],
+        "summary": "Create a recurrence plan",
+        "description": "Creates a new recurrence plan for Pix Automatic.",
+        "operationId": "createPixAutomaticPlan",
+        "parameters": [
+          {
+            "name": "x-api-key",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "your-x-api-key"
+            }
+          },
+          {
+            "name": "x-api-token",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "your-x-api-token"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "title": {
+                    "type": "string",
+                    "description": "Title of the plan.",
+                    "example": "Plano Premium Mensal"
+                  },
+                  "description": {
+                    "type": "string",
+                    "description": "Detailed description of the plan.",
+                    "example": "Acesso completo a todas as funcionalidades da plataforma."
+                  },
+                  "frequency": {
+                    "type": "string",
+                    "description": "Billing frequency.",
+                    "example": "MONTHLY"
+                  },
+                  "period": {
+                    "type": "integer",
+                    "description": "Period of the frequency (e.g., 1 for monthly, 3 for quarterly).",
+                    "example": 1
+                  },
+                  "imediateAmount": {
+                    "type": "number",
+                    "format": "float",
+                    "description": "Immediate charge amount upon joining the plan.",
+                    "example": 49.90
+                  },
+                  "recurrenceAmount": {
+                    "type": "number",
+                    "format": "float",
+                    "description": "Amount for recurring charges.",
+                    "example": 29.90
+                  },
+                  "minimumRecurrenceAmount": {
+                    "type": "number",
+                    "format": "float",
+                    "description": "Minimum amount accepted for recurring charges.",
+                    "example": 29.90
+                  },
+                  "retryPolicy": {
+                    "type": "string",
+                    "description": "Retry policy in case of failure.",
+                    "enum": [
+                      "ACCEPT_3R_7D",
+                      "NOT_ACCEPT"
+                    ],
+                    "example": "ACCEPT_3R_7D"
+                  },
+                  "enabled": {
+                    "type": "boolean",
+                    "description": "Indicates if the plan is active.",
+                    "example": true
+                  }
+                }
+              },
+              "examples": {
+                "CreatePlanExample": {
+                  "summary": "Example of creating a monthly plan",
+                  "value": {
+                    "title": "Plano Premium Mensal",
+                    "description": "Acesso completo a todas as funcionalidades da plataforma.",
+                    "frequency": "MONTHLY",
+                    "period": 1,
+                    "imediateAmount": 49.90,
+                    "recurrenceAmount": 29.90,
+                    "minimumRecurrenceAmount": 29.90,
+                    "retryPolicy": "ACCEPT_3R_7D",
+                    "enabled": true
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Plan created successfully.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": {
+                      "type": "integer",
+                      "example": 0
+                    },
+                    "message": {
+                      "type": "string",
+                      "example": "success"
+                    },
+                    "id": {
+                      "type": "string",
+                      "description": "Unique ID of the generated plan.",
+                      "example": "6851c0842bf40769ead1fde5"
+                    },
+                    "title": {
+                      "type": "string",
+                      "example": "Plano Premium Mensal"
+                    },
+                    "description": {
+                      "type": "string",
+                      "example": "Acesso completo a todas as funcionalidades da plataforma."
+                    },
+                    "frequency": {
+                      "type": "string",
+                      "example": "MONTHLY"
+                    },
+                    "period": {
+                      "type": "integer",
+                      "example": 1
+                    },
+                    "imediateAmount": {
+                      "type": "number",
+                      "example": 49.9
+                    },
+                    "recurrenceAmount": {
+                      "type": "number",
+                      "example": 29.9
+                    },
+                    "minimumRecurrenceAmount": {
+                      "type": "number",
+                      "example": 29.9
+                    },
+                    "retryPolicy": {
+                      "type": "string",
+                      "example": "ACCEPT_3R_7D"
+                    },
+                    "enabled": {
+                      "type": "boolean",
+                      "example": true
+                    },
+                    "creation": {
+                      "type": "string",
+                      "format": "date-time",
+                      "description": "Date and time of plan creation.",
+                      "example": "2025-06-17 19:22:44"
+                    }
+                  }
+                },
+                "examples": {
+                  "SUCCESS_RESPONSE": {
+                    "summary": "Successful response for plan creation",
+                    "value": {
+                      "status": 0,
+                      "message": "success",
+                      "id": "6851c0842bf40769ead1fde5",
+                      "title": "Plano Premium Mensal",
+                      "description": "Acesso completo a todas as funcionalidades da plataforma.",
+                      "frequency": "MONTHLY",
+                      "period": 1,
+                      "imediateAmount": 49.9,
+                      "recurrenceAmount": 29.9,
+                      "minimumRecurrenceAmount": 29.9,
+                      "retryPolicy": "ACCEPT_3R_7D",
+                      "enabled": true,
+                      "creation": "2025-06-17 19:22:44"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "validation failure response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorCount": {
+                      "type": "number",
+                      "example": 1
+                    },
+                    "errors": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "field": {
+                            "type": "string",
+                            "example": "title"
+                          },
+                          "message": {
+                            "type": "string",
+                            "example": "may not be empty"
+                          }
+                        }
+                      }
+                    },
+                    "message": {
+                      "type": "string",
+                      "example": "field validation failure"
+                    },
+                    "status": {
+                      "type": "number",
+                      "example": -1
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Unauthorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorCount": {
+                      "type": "number",
+                      "example": 1
+                    },
+                    "errors": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "error": {
+                            "type": "string",
+                            "example": "Forbidden"
+                          },
+                          "message": {
+                            "type": "string",
+                            "example": "Access Denied"
+                          }
+                        }
+                      }
+                    },
+                    "message": {
+                      "type": "string",
+                      "example": "field validation failure"
+                    },
+                    "status": {
+                      "type": "number",
+                      "example": -1
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "Pix Automatic"
+        ],
+        "summary": "List recurrence plans",
+        "description": "Lists Pix Automatic plans based on provided filters.",
+        "operationId": "listPixAutomaticPlans",
+        "parameters": [
+          {
+            "name": "x-api-key",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "your-x-api-key"
+            }
+          },
+          {
+            "name": "x-api-token",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "your-x-api-token"
+            }
+          },
+          {
+            "name": "title",
+            "in": "query",
+            "description": "Filter by plan title.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "enabled",
+            "in": "query",
+            "description": "Filter by plan status (active/inactive).",
+            "required": false,
+            "schema": {
+              "type": "boolean"
+            }
+          },
+          {
+            "name": "frequency",
+            "in": "query",
+            "description": "Filter by frequency.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "description": "Page number for the query.",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "default": 0
+            }
+          },
+          {
+            "name": "maxPageResults",
+            "in": "query",
+            "description": "Maximum number of results per page.",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "default": 20
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "List of plans returned successfully.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": {
+                      "type": "integer",
+                      "example": 0
+                    },
+                    "message": {
+                      "type": "string",
+                      "example": "success"
+                    },
+                    "totalElements": {
+                      "type": "integer",
+                      "description": "Total number of plans found.",
+                      "example": 1
+                    },
+                    "totalPages": {
+                      "type": "integer",
+                      "description": "Total number of pages.",
+                      "example": 1
+                    },
+                    "resultSize": {
+                      "type": "integer",
+                      "description": "Number of plans returned in the current page.",
+                      "example": 1
+                    },
+                    "result": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "id": { "type": "string" },
+                          "title": { "type": "string" },
+                          "description": { "type": "string" },
+                          "frequency": { "type": "string" },
+                          "period": { "type": "integer" },
+                          "imediateAmount": { "type": "number" },
+                          "recurrenceAmount": { "type": "number" },
+                          "minimumRecurrenceAmount": { "type": "number" },
+                          "retryPolicy": { "type": "string" },
+                          "enabled": { "type": "boolean" },
+                          "creation": { "type": "string", "format": "date-time" },
+                          "totalAuthorizations": { "type": "integer" }
+                        }
+                      }
+                    }
+                  }
+                },
+                "examples": {
+                  "SUCCESS_RESPONSE": {
+                    "summary": "Successful response for listing plans",
+                    "value": {
+                      "status": 0,
+                      "message": "success",
+                      "totalElements": 1,
+                      "totalPages": 1,
+                      "resultSize": 1,
+                      "result": [
+                        {
+                          "id": "6851c0842bf40769ead1fde5",
+                          "title": "Plano Premium Mensal",
+                          "description": "Acesso completo a todas as funcionalidades da plataforma.",
+                          "frequency": "MONTHLY",
+                          "period": 1,
+                          "imediateAmount": 49.9,
+                          "recurrenceAmount": 29.9,
+                          "minimumRecurrenceAmount": 29.9,
+                          "retryPolicy": "ACCEPT_3R_7D",
+                          "enabled": true,
+                          "creation": "2025-06-17 19:22:44",
+                          "totalAuthorizations": 0
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Unauthorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorCount": { "type": "number", "example": 1 },
+                    "errors": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "error": { "type": "string", "example": "Forbidden" },
+                          "message": { "type": "string", "example": "Access Denied" }
+                        }
+                      }
+                    },
+                    "message": { "type": "string", "example": "field validation failure" },
+                    "status": { "type": "number", "example": -1 }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1.1/pix-automatic/plans/{planId}": {
+      "get": {
+        "tags": [
+          "Pix Automatic"
+        ],
+        "summary": "Get plan by ID",
+        "description": "Retrieves a specific plan by its ID.",
+        "operationId": "getPixAutomaticPlanById",
+        "parameters": [
+          {
+            "name": "x-api-key",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "your-x-api-key"
+            }
+          },
+          {
+            "name": "x-api-token",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "your-x-api-token"
+            }
+          },
+          {
+            "name": "planId",
+            "in": "path",
+            "description": "ID of the plan to be retrieved.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Plan data returned successfully.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": { "type": "integer" },
+                    "message": { "type": "string" },
+                    "id": { "type": "string" },
+                    "title": { "type": "string" },
+                    "description": { "type": "string" },
+                    "frequency": { "type": "string" },
+                    "period": { "type": "integer" },
+                    "imediateAmount": { "type": "number" },
+                    "recurrenceAmount": { "type": "number" },
+                    "minimumRecurrenceAmount": { "type": "number" },
+                    "retryPolicy": { "type": "string" },
+                    "enabled": { "type": "boolean" },
+                    "creation": { "type": "string", "format": "date-time" },
+                    "totalAuthorizations": { "type": "integer" },
+                    "authorizations": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "id": { "type": "integer" },
+                          "idRec": { "type": "string" },
+                          "status": { "type": "string" },
+                          "payer": {
+                            "type": "object",
+                            "properties": {
+                              "document": { "type": "string" },
+                              "name": { "type": "string" },
+                              "ispb": { "type": "string" }
+                            }
+                          },
+                          "nextRecurrenceDate": { "type": "string", "format": "date" }
+                        }
+                      }
+                    }
+                  }
+                },
+                "examples": {
+                  "SUCCESS_RESPONSE": {
+                    "summary": "Successful response for getting a specific plan",
+                    "value": {
+                      "status": 0,
+                      "message": "success",
+                      "id": "6851c0842bf40769ead1fde5",
+                      "title": "Plano Premium Mensal",
+                      "description": "Acesso completo a todas as funcionalidades da plataforma.",
+                      "frequency": "MONTHLY",
+                      "period": 1,
+                      "imediateAmount": 49.9,
+                      "recurrenceAmount": 29.9,
+                      "minimumRecurrenceAmount": 29.9,
+                      "retryPolicy": "ACCEPT_3R_7D",
+                      "enabled": true,
+                      "creation": "2025-06-17 19:22:44",
+                      "totalAuthorizations": 7,
+                      "authorizations": [
+                        {
+                          "id": 21,
+                          "idRec": "RR286838922025061602541904516",
+                          "status": "APPROVED",
+                          "payer": {
+                            "document": "00000000000",
+                            "name": "JOHN DOE",
+                            "ispb": "99999919"
+                          },
+                          "nextRecurrenceDate": "2025-07-19"
+                        },
+                        {
+                          "id": 25,
+                          "idRec": "RR286838922025061603533095545",
+                          "status": "CANCELLED",
+                          "payer": {
+                            "document": "00000000000",
+                            "name": "JOHN DOE",
+                            "ispb": "99999919"
+                          },
+                          "nextRecurrenceDate": "2025-07-19"
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Unauthorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorCount": { "type": "number", "example": 1 },
+                    "errors": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "error": { "type": "string", "example": "Forbidden" },
+                          "message": { "type": "string", "example": "Access Denied" }
+                        }
+                      }
+                    },
+                    "message": { "type": "string", "example": "field validation failure" },
+                    "status": { "type": "number", "example": -1 }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Plan not found response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": { "type": "number", "example": 998 },
+                    "message": { "type": "string", "example": "plan not found" },
+                    "errorCount": { "type": "number", "example": 1 },
+                    "errors": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "field": { "type": "string", "example": "planId" },
+                          "message": { "type": "string", "example": "non-existent plan" }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1.1/pix-automatic/scheduled-payments": {
+      "get": {
+        "tags": [
+          "Pix Automatic"
+        ],
+        "summary": "List scheduled payments",
+        "description": "Lists scheduled payments (payment instructions) based on filters.",
+        "operationId": "listScheduledPayments",
+        "parameters": [
+          {
+            "name": "x-api-key",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "your-x-api-key"
+            }
+          },
+          {
+            "name": "x-api-token",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "your-x-api-token"
+            }
+          },
+          {
+            "name": "status",
+            "in": "query",
+            "description": "Filter by payment status.",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "PENDING_SCHEDULE",
+                "SCHEDULED",
+                "PAID",
+                "FAILED",
+                "CANCELLED"
+              ],
+              "example": "PAID"
+            }
+          },
+          {
+            "name": "initialDueDate",
+            "in": "query",
+            "description": "Filter by start due date.",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "format": "date",
+              "example": "2025-01-01"
+            }
+          },
+          {
+            "name": "finalDueDate",
+            "in": "query",
+            "description": "Filter by end due date.",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "format": "date",
+              "example": "2025-12-31"
+            }
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "description": "Page number for the query.",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "default": 0
+            }
+          },
+          {
+            "name": "maxPageResults",
+            "in": "query",
+            "description": "Maximum number of results per page.",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "default": 20
+            }
+          },
+          {
+            "name": "sortBy",
+            "in": "query",
+            "description": "Field to sort the results by.",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": ["dueDate", "creation"],
+              "default": "creation"
+            }
+          },
+          {
+            "name": "order",
+            "in": "query",
+            "description": "Sort order.",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": ["ASC", "DESC"],
+              "default": "DESC"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "List of scheduled payments returned successfully.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": { "type": "integer" },
+                    "message": { "type": "string" },
+                    "totalElements": { "type": "integer" },
+                    "totalPages": { "type": "integer" },
+                    "resultSize": { "type": "integer" },
+                    "results": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "id": { "type": "integer" },
+                          "instructionId": { "type": "string" },
+                          "status": { "type": "string" },
+                          "dueDate": { "type": "string", "format": "date-time" },
+                          "amount": { "type": "number" },
+                          "endToEnd": { "type": "string" },
+                          "rejectionCode": { "type": "string" },
+                          "rejectionReason": { "type": "string" },
+                          "creation": { "type": "string", "format": "date-time" },
+                          "authorization": {
+                            "type": "object",
+                            "properties": {
+                              "id": { "type": "integer" },
+                              "idRec": { "type": "string" },
+                              "initialDate": { "type": "string", "format": "date" },
+                              "finalDate": { "type": "string", "format": "date" },
+                              "creation": { "type": "string", "format": "date-time" }
+                            }
+                          },
+                          "sale": {
+                            "type": "object",
+                            "properties": {
+                              "id": { "type": "integer" },
+                              "uuid": { "type": "string", "format": "uuid" },
+                              "situation": { "type": "string" }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "examples": {
+                  "SUCCESS_RESPONSE": {
+                    "summary": "Example of a successful response",
+                    "value": {
+                      "status": 0,
+                      "message": "success",
+                      "totalElements": 1,
+                      "totalPages": 1,
+                      "resultSize": 1,
+                      "results": [
+                        {
+                          "id": 12,
+                          "instructionId": "000000000000000000000215832344",
+                          "status": "CANCELLED",
+                          "dueDate": "2025-06-19 03:00:00",
+                          "amount": 11,
+                          "endToEnd": "E2868389220250619150000215832384",
+                          "rejectionCode": "SLCR",
+                          "rejectionReason": "1",
+                          "creation": "2025-06-16 07:16:45",
+                          "authorization": {
+                            "id": 26,
+                            "idRec": "RR286838922025061604150842631",
+                            "initialDate": "2025-06-19",
+                            "finalDate": "2025-12-15",
+                            "creation": "2025-06-16 07:16:42"
+                          },
+                          "sale": {
+                            "id": 215832384,
+                            "uuid": "16a5e040-8b55-4dbe-8563-035d2876a766",
+                            "situation": "CANCELLED"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Unauthorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorCount": { "type": "number", "example": 1 },
+                    "errors": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "error": { "type": "string", "example": "Forbidden" },
+                          "message": { "type": "string", "example": "Access Denied" }
+                        }
+                      }
+                    },
+                    "message": { "type": "string", "example": "field validation failure" },
+                    "status": { "type": "number", "example": -1 }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1.1/pix-automatic/scheduled-payments/{instructionId}": {
+      "get": {
+        "tags": [
+          "Pix Automatic"
+        ],
+        "summary": "Get scheduled payment by instruction ID",
+        "description": "Retrieves a specific scheduled payment by its instruction ID.",
+        "operationId": "getScheduledPaymentById",
+        "parameters": [
+          {
+            "name": "x-api-key",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "your-x-api-key"
+            }
+          },
+          {
+            "name": "x-api-token",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "your-x-api-token"
+            }
+          },
+          {
+            "name": "instructionId",
+            "in": "path",
+            "description": "Instruction ID of the scheduled payment.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Scheduled payment data returned successfully.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": { "type": "integer" },
+                    "message": { "type": "string" },
+                    "paymentSchedule": {
+                      "type": "object",
+                      "properties": {
+                        "id": { "type": "integer" },
+                        "instructionId": { "type": "string" },
+                        "status": { "type": "string" },
+                        "dueDate": { "type": "string", "format": "date-time" },
+                        "amount": { "type": "number" },
+                        "endToEnd": { "type": "string" },
+                        "rejectionCode": { "type": "string" },
+                        "rejectionReason": { "type": "string" },
+                        "creation": { "type": "string", "format": "date-time" }
+                      }
+                    },
+                    "authorization": {
+                      "type": "object",
+                      "properties": {
+                        "id": { "type": "integer" },
+                        "idRec": { "type": "string" },
+                        "initialDate": { "type": "string", "format": "date" },
+                        "finalDate": { "type": "string", "format": "date" },
+                        "creation": { "type": "string", "format": "date-time" }
+                      }
+                    },
+                    "sale": {
+                      "type": "object",
+                      "properties": {
+                        "id": { "type": "integer" },
+                        "uuid": { "type": "string", "format": "uuid" },
+                        "situation": { "type": "string" }
+                      }
+                    }
+                  }
+                },
+                "examples": {
+                  "SUCCESS_RESPONSE": {
+                    "summary": "Successful response for a single scheduled payment",
+                    "value": {
+                      "status": 0,
+                      "message": "success",
+                      "paymentSchedule": {
+                        "id": 12,
+                        "instructionId": "000000000000000000000215832344",
+                        "status": "CANCELLED",
+                        "dueDate": "2025-06-19 03:00:00",
+                        "amount": 11,
+                        "endToEnd": "E2868389220250619150000215832384",
+                        "rejectionCode": "SLCR",
+                        "rejectionReason": "1",
+                        "creation": "2025-06-16 07:16:45"
+                      },
+                      "authorization": {
+                        "id": 26,
+                        "idRec": "RR286838922025061604150842631",
+                        "initialDate": "2025-06-19",
+                        "finalDate": "2025-12-15",
+                        "creation": "2025-06-16 07:16:42"
+                      },
+                      "sale": {
+                        "id": 215832384,
+                        "uuid": "16a5e040-8b55-4dbe-8563-035d2876a766",
+                        "situation": "CANCELLED"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Unauthorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorCount": { "type": "number", "example": 1 },
+                    "errors": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "error": { "type": "string", "example": "Forbidden" },
+                          "message": { "type": "string", "example": "Access Denied" }
+                        }
+                      }
+                    },
+                    "message": { "type": "string", "example": "field validation failure" },
+                    "status": { "type": "number", "example": -1 }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Scheduled payment not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": { "type": "number", "example": 998 },
+                    "message": { "type": "string", "example": "scheduled payment not found" },
+                    "errorCount": { "type": "number", "example": 1 },
+                    "errors": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "field": { "type": "string", "example": "instructionId" },
+                          "message": { "type": "string", "example": "non-existent scheduled payment" }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1.1/pix-automatic/scheduled-payments/{instructionId}/cancel": {
+      "put": {
+        "tags": [
+          "Pix Automatic"
+        ],
+        "summary": "Cancel scheduled payment",
+        "description": "Cancels a scheduled payment that has not yet been processed.",
+        "operationId": "cancelScheduledPayment",
+        "parameters": [
+          {
+            "name": "x-api-key",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "your-x-api-key"
+            }
+          },
+          {
+            "name": "x-api-token",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "your-x-api-token"
+            }
+          },
+          {
+            "name": "instructionId",
+            "in": "path",
+            "description": "Instruction ID of the scheduled payment to be canceled.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "Reason for the cancellation.",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "reason": {
+                    "type": "string",
+                    "description": "A brief reason for the cancellation."
+                  }
+                }
+              },
+              "examples": {
+                "CancellationExample": {
+                  "summary": "Example of a cancellation request",
+                  "value": {
+                    "reason": "Customer request."
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Scheduled payment canceled successfully.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": {
+                      "type": "integer",
+                      "example": 0
+                    },
+                    "message": {
+                      "type": "string",
+                      "example": "success"
+                    }
+                  }
+                },
+                "examples": {
+                  "SUCCESS_RESPONSE": {
+                    "summary": "Successful cancellation response",
+                    "value": {
+                      "status": 0,
+                      "message": "success"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request. The payment might already be processed or in a non-cancelable state.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorCount": { "type": "number", "example": 1 },
+                    "errors": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "field": { "type": "string", "example": "instructionId" },
+                          "message": { "type": "string", "example": "payment cannot be canceled" }
+                        }
+                      }
+                    },
+                    "message": { "type": "string", "example": "field validation failure" },
+                    "status": { "type": "number", "example": -1 }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Unauthorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorCount": { "type": "number", "example": 1 },
+                    "errors": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "error": { "type": "string", "example": "Forbidden" },
+                          "message": { "type": "string", "example": "Access Denied" }
+                        }
+                      }
+                    },
+                    "message": { "type": "string", "example": "field validation failure" },
+                    "status": { "type": "number", "example": -1 }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Scheduled payment not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": { "type": "number", "example": 998 },
+                    "message": { "type": "string", "example": "scheduled payment not found" },
+                    "errorCount": { "type": "number", "example": 1 },
+                    "errors": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "field": { "type": "string", "example": "instructionId" },
+                          "message": { "type": "string", "example": "non-existent scheduled payment" }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1.1/pix-automatic/authorizations": {
+      "get": {
+        "tags": [
+          "Pix Automatic"
+        ],
+        "summary": "List authorizations",
+        "description": "Lists recurring payment authorizations based on provided filters.",
+        "operationId": "listAuthorizations",
+        "parameters": [
+          {
+            "name": "x-api-key",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "your-x-api-key"
+            }
+          },
+          {
+            "name": "x-api-token",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "your-x-api-token"
+            }
+          },
+          {
+            "name": "situation",
+            "in": "query",
+            "description": "Filter by authorization status.",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "CREATED",
+                "APPROVING",
+                "APPROVED",
+                "REJECTED",
+                "EXPIRED",
+                "CANCELLING",
+                "CANCELLED",
+                "ACTIVE",
+                "CONCLUDED"
+              ],
+              "example": "ACTIVE"
+            }
+          },
+          {
+            "name": "payerName",
+            "in": "query",
+            "description": "Filter by the payer's name.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "initialDate",
+            "in": "query",
+            "description": "Filter by start date (format YYYY-MM-DD).",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "format": "date"
+            }
+          },
+          {
+            "name": "finalDate",
+            "in": "query",
+            "description": "Filter by end date (format YYYY-MM-DD).",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "format": "date"
+            }
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "description": "Page number for the query.",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "default": 0
+            }
+          },
+          {
+            "name": "maxPageResults",
+            "in": "query",
+            "description": "Maximum number of results per page.",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "default": 20
+            }
+          },
+          {
+            "name": "sortBy",
+            "in": "query",
+            "description": "Field to sort the results by.",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": ["updatedAt", "creation", "payerName"],
+              "default": "updatedAt"
+            }
+          },
+          {
+            "name": "order",
+            "in": "query",
+            "description": "Sort order.",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": ["ASC", "DESC"],
+              "default": "DESC"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "List of authorizations returned successfully.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": { "type": "integer" },
+                    "message": { "type": "string" },
+                    "totalElements": { "type": "integer" },
+                    "totalPages": { "type": "integer" },
+                    "resultSize": { "type": "integer" },
+                    "results": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "id": { "type": "integer" },
+                          "idRec": { "type": "string" },
+                          "status": { "type": "string" },
+                          "periodicity": { "type": "string" },
+                          "minimumAmount": { "type": "number" },
+                          "initialDate": { "type": "string", "format": "date" },
+                          "finalDate": { "type": "string", "format": "date" },
+                          "nextRecurrenceDate": { "type": "string", "format": "date-time" },
+                          "creation": { "type": "string", "format": "date-time" },
+                          "payer": {
+                            "type": "object",
+                            "properties": {
+                              "document": { "type": "string" },
+                              "name": { "type": "string" },
+                              "ispb": { "type": "string" }
+                            }
+                          },
+                          "contract": {
+                            "type": "object",
+                            "properties": {
+                              "id": { "type": "string" },
+                              "description": { "type": "string" }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "examples": {
+                  "SUCCESS_RESPONSE": {
+                    "summary": "Successful response for listing authorizations",
+                    "value": {
+                      "status": 0,
+                      "message": "success",
+                      "totalElements": 1,
+                      "totalPages": 1,
+                      "resultSize": 1,
+                      "results": [
+                        {
+                          "id": 27,
+                          "idRec": "RR286838922025061604202710881",
+                          "status": "APPROVED",
+                          "periodicity": "MONTHLY",
+                          "minimumAmount": 11,
+                          "initialDate": "2025-06-19",
+                          "finalDate": "2025-12-15",
+                          "nextRecurrenceDate": "2025-07-19 03:00:00",
+                          "creation": "2025-06-16 07:21:04",
+                          "payer": {
+                            "document": "00000000000",
+                            "name": "JOHN DOE",
+                            "ispb": "99999919"
+                          },
+                          "contract": {
+                            "id": "6851c0842bf40769ead1fde5",
+                            "description": "contract-456"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Unauthorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorCount": { "type": "number", "example": 1 },
+                    "errors": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "error": { "type": "string", "example": "Forbidden" },
+                          "message": { "type": "string", "example": "Access Denied" }
+                        }
+                      }
+                    },
+                    "message": { "type": "string", "example": "field validation failure" },
+                    "status": { "type": "number", "example": -1 }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1.1/pix-automatic/authorizations/{idRec}": {
+      "get": {
+        "tags": [
+          "Pix Automatic"
+        ],
+        "summary": "Get authorization by recurrence ID",
+        "description": "Retrieves a specific recurring payment authorization by its recurrence ID (idRec).",
+        "operationId": "getAuthorizationById",
+        "parameters": [
+          {
+            "name": "x-api-key",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "your-x-api-key"
+            }
+          },
+          {
+            "name": "x-api-token",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "your-x-api-token"
+            }
+          },
+          {
+            "name": "idRec",
+            "in": "path",
+            "description": "Recurrence ID (`idRec`) of the authorization to be retrieved.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Authorization data returned successfully.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": { "type": "integer" },
+                    "message": { "type": "string" },
+                    "authorization": {
+                      "type": "object",
+                      "properties": {
+                        "id": { "type": "integer" },
+                        "idRec": { "type": "string" },
+                        "status": { "type": "string" },
+                        "periodicity": { "type": "string" },
+                        "minimumAmount": { "type": "number" },
+                        "initialDate": { "type": "string", "format": "date" },
+                        "finalDate": { "type": "string", "format": "date" },
+                        "nextRecurrenceDate": { "type": "string", "format": "date-time" },
+                        "creation": { "type": "string", "format": "date-time" },
+                        "payer": {
+                          "type": "object",
+                          "properties": {
+                            "document": { "type": "string" },
+                            "name": { "type": "string" },
+                            "ispb": { "type": "string" }
+                          }
+                        },
+                        "contract": {
+                          "type": "object",
+                          "properties": {
+                            "id": { "type": "string" },
+                            "description": { "type": "string" }
+                          }
+                        }
+                      }
+                    },
+                    "paymentSchedules": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "id": { "type": "integer" },
+                          "status": { "type": "string" },
+                          "dueDate": { "type": "string", "format": "date-time" },
+                          "amount": { "type": "number" },
+                          "sale": {
+                            "type": "object",
+                            "properties": {
+                              "id": { "type": "integer" },
+                              "uuid": { "type": "string", "format": "uuid" },
+                              "situation": { "type": "string" }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "examples": {
+                  "SUCCESS_RESPONSE": {
+                    "summary": "Successful response for a single authorization",
+                    "value": {
+                      "status": 0,
+                      "message": "success",
+                      "authorization": {
+                        "id": 27,
+                        "idRec": "RR286838922025061604202710881",
+                        "status": "APPROVED",
+                        "periodicity": "MONTHLY",
+                        "minimumAmount": 11,
+                        "initialDate": "2025-06-19",
+                        "finalDate": "2025-12-15",
+                        "nextRecurrenceDate": "2025-07-19 03:00:00",
+                        "creation": "2025-06-16 07:21:04",
+                        "payer": {
+                          "document": "00000000000",
+                          "name": "JOHN DOE",
+                          "ispb": "99999919"
+                        },
+                        "contract": {
+                          "id": "6851c0842bf40769ead1fde5",
+                          "description": "contract-456"
+                        }
+                      },
+                      "paymentSchedules": [
+                        {
+                          "id": 13,
+                          "status": "PAID",
+                          "dueDate": "2025-06-16 07:20:24",
+                          "amount": 11,
+                          "sale": {
+                            "id": 215832385,
+                            "uuid": "3b1e4441-9060-3b9e-81a4-d0fa4cab19b8",
+                            "situation": "CANCELLED"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Unauthorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorCount": { "type": "number", "example": 1 },
+                    "errors": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "error": { "type": "string", "example": "Forbidden" },
+                          "message": { "type": "string", "example": "Access Denied" }
+                        }
+                      }
+                    },
+                    "message": { "type": "string", "example": "field validation failure" },
+                    "status": { "type": "number", "example": -1 }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Authorization not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": { "type": "number", "example": 998 },
+                    "message": { "type": "string", "example": "authorization not found" },
+                    "errorCount": { "type": "number", "example": 1 },
+                    "errors": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "field": { "type": "string", "example": "idRec" },
+                          "message": { "type": "string", "example": "non-existent authorization" }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1.1/pix-automatic/authorizations/{idRec}/cancel": {
+      "put": {
+        "tags": [
+          "Pix Automatic"
+        ],
+        "summary": "Cancel authorization",
+        "description": "Cancels a recurring payment authorization.",
+        "operationId": "cancelAuthorization",
+        "parameters": [
+          {
+            "name": "x-api-key",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "your-x-api-key"
+            }
+          },
+          {
+            "name": "x-api-token",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "your-x-api-token"
+            }
+          },
+          {
+            "name": "idRec",
+            "in": "path",
+            "description": "Recurrence ID (`idRec`) of the authorization to be canceled.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "Reason for the cancellation.",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "reason": {
+                    "type": "string",
+                    "description": "A brief reason for the cancellation.",
+                    "example": "Customer requested cancellation."
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Authorization canceled successfully.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": {
+                      "type": "integer",
+                      "example": 0
+                    },
+                    "message": {
+                      "type": "string",
+                      "example": "success"
+                    }
+                  }
+                },
+                "examples": {
+                  "SUCCESS_RESPONSE": {
+                    "summary": "Successful cancellation response",
+                    "value": {
+                      "status": 0,
+                      "message": "success"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request. The authorization might be in a non-cancelable state.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorCount": { "type": "number", "example": 1 },
+                    "errors": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "field": { "type": "string", "example": "idRec" },
+                          "message": { "type": "string", "example": "authorization cannot be canceled" }
+                        }
+                      }
+                    },
+                    "message": { "type": "string", "example": "field validation failure" },
+                    "status": { "type": "number", "example": -1 }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Unauthorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorCount": { "type": "number", "example": 1 },
+                    "errors": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "error": { "type": "string", "example": "Forbidden" },
+                          "message": { "type": "string", "example": "Access Denied" }
+                        }
+                      }
+                    },
+                    "message": { "type": "string", "example": "field validation failure" },
+                    "status": { "type": "number", "example": -1 }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Authorization not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": { "type": "number", "example": 998 },
+                    "message": { "type": "string", "example": "authorization not found" },
+                    "errorCount": { "type": "number", "example": 1 },
+                    "errors": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "field": { "type": "string", "example": "idRec" },
+                          "message": { "type": "string", "example": "non-existent authorization" }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1.1/checkout/pix-automatic": {
+      "post": {
+        "tags": [
+          "Checkouts",
+          "Pix Automatic"
+        ],
+        "summary": "Create Pix Automatic Recurrence",
+        "description": "Creates a Pix Automatic recurrence journey. Use the `immediatePayment` flag inside the `recurrence` object to control the flow: `false` for Journey 2 (authorization only), or `true` for Journey 3 (authorization with an immediate payment).",
+        "operationId": "createPixAutomaticCheckout",
+        "parameters": [
+          {
+            "name": "x-api-key",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "your-x-api-key"
+            }
+          },
+          {
+            "name": "x-api-token",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "your-x-api-token"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "currency": {
+                    "type": "string",
+                    "description": "ISO-4217 currency code.",
+                    "example": "BRL"
+                  },
+                  "referenceCode": {
+                    "type": "string",
+                    "description": "Unique order identifier.",
+                    "example": "ref-jornada2-xyz-123"
+                  },
+                   "amount": {
+                    "type": "number",
+                    "description": "Required only when `recurrence.immediatePayment` is `true` (Journey 3).",
+                    "example": 11.00
+                  },
+                  "maxAge": {
+                    "type": "number",
+                    "description": "QR Code expiration time in minutes.",
+                    "example": 120
+                  },
+                  "callbackURL": {
+                    "type": "string",
+                    "description": "Callback URL for transaction updates.",
+                    "example": "https://foo.bar/paymeeListener"
+                  },
+                  "shopper": {
+                    "type": "object",
+                    "properties": {
+                      "id": { "type": "string" },
+                      "name": { "type": "string" },
+                      "email": { "type": "string" },
+                      "document": {
+                        "type": "object",
+                        "properties": {
+                          "type": { "type": "string", "enum": ["CPF", "CNPJ"] },
+                          "number": { "type": "string" }
+                        }
+                      },
+                      "phone": {
+                        "type": "object",
+                        "properties": {
+                          "type": { "type": "string", "enum": ["MOBILE", "HOME", "WORK"] },
+                          "number": { "type": "string" }
+                        }
+                      }
+                    }
+                  },
+                  "recurrence": {
+                    "type": "object",
+                    "properties": {
+                      "planId": {
+                        "type": "string",
+                        "description": "ID of the previously created plan."
+                      },
+                      "immediatePayment": {
+                        "type": "boolean",
+                        "description": "Controls the flow. `true` for Journey 3 (with immediate payment), `false` for Journey 2 (authorization only)."
+                      },
+                      "amount": {
+                        "type": "object",
+                        "properties": {
+                          "recurrenceAmount": { "type": "number" }
+                        }
+                      },
+                      "calendar": {
+                        "type": "object",
+                        "properties": {
+                          "initialDate": { "type": "string", "format": "date" },
+                          "finalDate": { "type": "string", "format": "date" },
+                          "periodicity": { "type": "string" }
+                        }
+                      },
+                      "retry": { "type": "boolean" }
+                    }
+                  }
+                }
+              },
+              "examples": {
+                "Journey 2": {
+                  "summary": "Journey 2: Authorization Only",
+                  "value": {
+                    "currency": "BRL",
+                    "referenceCode": "ref-journey2-xyz-123",
+                    "maxAge": 120,
+                    "callbackURL": "https://foo.bar/paymeeListener",
+                    "shopper": {
+                      "id": "24391203",
+                      "email": "foo@bar.com",
+                      "name": "JOHN DOE",
+                      "document": { "type": "CPF", "number": "00000000000" },
+                      "phone": { "type": "MOBILE", "number": "11999990000" }
+                    },
+                    "recurrence": {
+                      "planId": "6852768495f9a7e75febdbe3",
+                      "immediatePayment": false,
+                      "amount": { "recurrenceAmount": 11.00 },
+                      "calendar": {
+                        "initialDate": "2025-07-25",
+                        "finalDate": "2025-12-25",
+                        "periodicity": "MONTHLY"
+                      },
+                      "retry": true
+                    }
+                  }
+                },
+                "Journey 3": {
+                  "summary": "Journey 3: With Immediate Payment",
+                   "value": {
+                    "currency": "BRL",
+                    "amount": 15.00,
+                    "referenceCode": "ref-journey3-abc-456",
+                    "maxAge": 120,
+                    "callbackURL": "https://foo.bar/paymeeListener",
+                    "shopper": {
+                      "id": "24391204",
+                      "email": "jane@doe.com",
+                      "name": "JOHN DOE",
+                      "document": { "type": "CPF", "number": "00000000000" },
+                      "phone": { "type": "MOBILE", "number": "11999990000" }
+                    },
+                    "recurrence": {
+                      "planId": "6852768495f9a7e75febdbe3",
+                      "immediatePayment": true,
+                      "amount": { "recurrenceAmount": 25.50 },
+                      "calendar": {
+                        "initialDate": "2025-08-01",
+                        "finalDate": "2026-02-01",
+                        "periodicity": "MONTHLY"
+                      },
+                      "retry": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Pix Automatic journey created successfully. The response contains QR code instructions to start the flow.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": { "type": "integer" },
+                    "message": { "type": "string" },
+                    "response": { "type": "object" }
+                  }
+                },
+                "examples": {
+                  "SUCCESS_RESPONSE": {
+                    "summary": "Successful Response",
+                    "value": {
+                      "status": 0,
+                      "message": "success",
+                      "response": {
+                        "id": 215832474,
+                        "referenceCode": "ref-journey3-abc-456",
+                        "amount": 15,
+                        "saleCode": "215832474",
+                        "uuid": "ed700503-e3e0-3c3f-867f-0bd7bba3424a",
+                        "shopper": {
+                          "id": "24391204",
+                          "name": "JOHN DOE",
+                          "email": "jane@doe.com",
+                          "document": { "type": "CPF", "number": "00000000000" },
+                          "phone": { "type": "MOBILE", "number": "11999990000" }
+                        },
+                        "instructions": {
+                          "chosen": "PIX_RECURRENCE",
+                          "name": "Pagamento Recorrente via PIX",
+                          "label": "Pagamento Recorrente via PIX",
+                          "qrCode": {
+                            "url": "https://api.paymee.com.br/resources/payments/pix/qrcode/ed700503-e3e0-3c3f-867f-0bd7bba3424a",
+                            "base64": "iVBORw0KGgoAAAANSUhEUgAAAPoAAAD6CAIAAAAHjs1q... (base64 image data)",
+                            "plain": "00020101021226930014br.gov.bcb.pix... (qr code text)"
+                          },
+                          "steps": {
+                            "qrCode": [
+                              "Acesse o APP ou o Internet Banking do seu Banco",
+                              "Acesse o menu PIX",
+                              "Abra o leitor de QRCode no APP e escaneie o código informado",
+                              "Siga os passos no APP e finalize a transação"
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request. The request body is malformed or contains invalid data.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorCount": { "type": "number", "example": 1 },
+                    "errors": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "field": { "type": "string", "example": "referenceCode" },
+                          "message": { "type": "string", "example": "referenceCode may not be empty" }
+                        }
+                      }
+                    },
+                    "message": { "type": "string", "example": "field validation failure" },
+                    "status": { "type": "number", "example": -1 }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Unauthorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorCount": { "type": "number", "example": 1 },
+                    "errors": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "error": { "type": "string", "example": "Forbidden" },
+                          "message": { "type": "string", "example": "Access Denied" }
+                        }
+                      }
+                    },
+                    "message": { "type": "string", "example": "field validation failure" },
+                    "status": { "type": "number", "example": -1 }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     }
   },
   "components": {

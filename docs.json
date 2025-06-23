@@ -80,6 +80,21 @@
             "pages": [
               "api-reference/get-payer-information"
             ]
+          },
+          {
+            "group": "Pix Automatic (Recurrence)",
+            "pages": [
+              "api-reference/create-pix-automatic-checkout",
+              "api-reference/create-plan",
+              "api-reference/list-plans",
+              "api-reference/get-plan-by-id",
+              "api-reference/list-authorizations",
+              "api-reference/get-authorization-by-id",
+              "api-reference/cancel-authorization",
+              "api-reference/list-scheduled-payments",
+              "api-reference/get-scheduled-payment-by-id",
+              "api-reference/cancel-scheduled-payment"
+            ]
           }
         ]
       }
