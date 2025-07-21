@@ -3376,7 +3376,7 @@
                       "type": "number",
                       "example": 1
                     },
-                    "authorizationKey": {
+                    "authorization_key": {
                       "type": "string",
                       "example": "2d1e28e2-b820-48fb-8b58-d2dc32b25944"
                     },
@@ -3468,7 +3468,7 @@
                           "branch": "0000",
                           "account": "000000-0"
                       },
-                      "authorizationKey": "2d1e28e2-b820-48fb-8b58-d2dc32b25944"
+                      "authorization_key": "2d1e28e2-b820-48fb-8b58-d2dc32b25944"
                   }
                   },
                   "Success response - GENERIC": {
